@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blessed Cleaning | St. Charles, MO</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--sage:#4A7C6F;--sage2:#6FA99A;--sage3:#D4EAE5;--white:#FFFFFF;--off:#F7F9F8;--dark:#1A2B27;--gray:#6B7E79;--border:rgba(74,124,111,0.15)}
+body{cursor:none;background:var(--white);color:var(--dark);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;padding:0 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--dark)}
+.logo em{color:var(--sage);font-style:italic}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--sage)}
+.nav-cta{background:var(--sage);color:#fff;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;padding:10px 24px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:background .2s;text-decoration:none}
+.nav-cta:hover{background:var(--sage2)}
+.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:68px}
+.hero-left{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;background:var(--off)}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--sage3);color:var(--sage);font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:2rem;width:fit-content}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,6rem);line-height:1;font-weight:700;margin-bottom:1.5rem;color:var(--dark)}
+h1 em{font-style:italic;color:var(--sage)}
+.hero-sub{font-size:.95rem;color:var(--gray);line-height:1.9;font-weight:300;max-width:420px;margin-bottom:3rem}
+.hero-btns{display:flex;gap:1rem}
+.btn-sage{background:var(--sage);color:#fff;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:14px 32px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-sage:hover{background:var(--sage2)}
+.btn-outline{background:transparent;color:var(--sage);font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:13px 32px;border:1.5px solid var(--sage);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;border-radius:2px;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-outline:hover{background:var(--sage3)}
+.hero-right{background:var(--sage);padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;gap:1.5rem;position:relative;overflow:hidden}
+.hero-right::before{content:'✦';position:absolute;font-size:20rem;color:rgba(255,255,255,0.03);top:-4rem;right:-4rem;pointer-events:none}
+.trust-item{background:rgba(255,255,255,0.1);padding:1.5rem 2rem;border-left:3px solid rgba(255,255,255,0.4);backdrop-filter:blur(4px)}
+.trust-item-title{font-weight:600;font-size:.95rem;color:#fff;margin-bottom:.3rem}
+.trust-item-desc{font-size:.82rem;color:rgba(255,255,255,0.7);font-weight:300;line-height:1.6}
+.stats-row{background:var(--dark);padding:3rem;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:1.5rem 2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center}
+.stat:last-child{border-right:none}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--sage2);line-height:1}
+.stat-l{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:.3rem}
+.section{padding:6rem 3rem;max-width:1200px;margin:0 auto}
+.eyebrow{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:.8rem}
+.title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:700;line-height:1;margin-bottom:1.5rem}
+.title em{font-style:italic;color:var(--sage)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+.svc{background:var(--off);padding:2.5rem;border:1px solid var(--border);border-radius:4px;transition:all .3s;position:relative;overflow:hidden}
+.svc:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:0 12px 32px rgba(74,124,111,0.1)}
+.svc-icon{width:48px;height:48px;background:var(--sage3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.3rem}
+.svc-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;margin-bottom:.6rem}
+.svc-desc{font-size:.83rem;color:var(--gray);line-height:1.7;font-weight:300}
+.process-section{background:var(--dark);padding:6rem 3rem}
+.process-inner{max-width:1200px;margin:0 auto}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem}
+.step{padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,0.07);position:relative}
+.step:last-child{border-right:none}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:rgba(111,169,154,0.2);line-height:1;margin-bottom:1rem}
+.step-title{font-weight:600;font-size:1rem;color:#fff;margin-bottom:.5rem}
+.step-desc{font-size:.83rem;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300}
+.reviews-section{background:var(--off);padding:6rem 3rem}
+.reviews-inner{max-width:1200px;margin:0 auto}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+.rev{background:#fff;padding:2.5rem;border:1px solid var(--border);border-radius:4px}
+.rev-stars{color:var(--sage);margin-bottom:1rem;letter-spacing:2px}
+.rev-text{font-size:.87rem;color:var(--gray);line-height:1.9;font-style:italic;margin-bottom:1.5rem;font-weight:300}
+.rev-author{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage)}
+.cta-section{background:var(--sage);padding:7rem 3rem;text-align:center}
+.cta-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,7rem);font-style:italic;color:#fff;line-height:1;margin-bottom:1.5rem;font-weight:700}
+.cta-section p{color:rgba(255,255,255,0.75);font-size:.95rem;max-width:400px;margin:0 auto 3rem;line-height:1.9;font-weight:300}
+.cta-phone{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:#fff;display:block;margin-bottom:2rem;text-decoration:none}
+.btn-white{background:#fff;color:var(--sage);font-size:.82rem;letter-spacing:2px;text-transform:uppercase;padding:16px 48px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:all .2s;display:inline-block;text-decoration:none}
+.btn-white:hover{background:var(--sage3)}
+footer{background:var(--dark);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.fl{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--sage2)}
+.fc{font-size:.7rem;letter-spacing:1px;color:rgba(255,255,255,0.3)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.fi{opacity:0;animation:fadeUp .7s ease forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-right{display:none}.nav-links{display:none}.section,.reviews-section,.process-section,.cta-section{padding:4rem 1.5rem}.services-grid,.rev-grid,.process-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:1fr 1fr}}
+.cur{color:var(--sage);position:fixed;width:8px;height:8px;background:currentColor;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform .1s}.cur-ring{position:fixed;width:32px;height:32px;border:1.5px solid currentColor;border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .15s ease;opacity:.5}
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;align-items:center;justify-content:center}.modal-overlay.active{display:flex}.modal-box{background:#fff;max-width:400px;width:90%;padding:2.5rem;text-align:center;position:relative;animation:popIn .25s ease}.modal-box h3{font-size:1.2rem;color:#1a1a1a;margin-bottom:.5rem;font-weight:700}.modal-box p{font-size:.85rem;color:#666;line-height:1.6;margin-bottom:1.5rem}.modal-phone{font-size:1.8rem;font-weight:900;color:#4A7C6F;display:block;margin-bottom:1rem;text-decoration:none}.modal-addr{font-size:.82rem;color:#888;margin-bottom:1.5rem}.modal-btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.modal-btn-call{background:#4A7C6F;color:#fff;padding:12px 28px;border:none;cursor:pointer;font-weight:700;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block}.modal-btn-map{background:transparent;color:#4A7C6F;padding:11px 28px;border:1.5px solid #4A7C6F;cursor:pointer;font-weight:700;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block}.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#999;line-height:1}@keyframes popIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">Blessed <em>Cleaning</em></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:3146198742" class="nav-cta" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Get a Quote</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-tag fi d1">⭐ 5.0 Stars · St. Charles, MO</div>
+    <h1 class="fi d2">A Clean Home,<em>Guaranteed.</em></h1>
+    <p class="hero-sub fi d3">Blessed Cleaning brings reliable, thorough residential and commercial cleaning to St. Charles. Insured, professional, and available same or next day.</p>
+    <div class="hero-btns fi d3">
+      <a href="tel:3146198742" class="btn-sage" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Call for a Quote</a>
+      <a href="#services" class="btn-outline">Our Services</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="trust-item fi d2"><div class="trust-item-title">💯 Fully Insured</div><div class="trust-item-desc">Every clean is covered. Your home and belongings are fully protected on every visit.</div></div>
+    <div class="trust-item fi d3"><div class="trust-item-title">⚡ Same or Next Day</div><div class="trust-item-desc">Need it fast? We have immediate openings and can often accommodate same-day requests.</div></div>
+    <div class="trust-item"><div class="trust-item-title">✅ 100% Satisfaction</div><div class="trust-item-desc">Not happy? We come back and do it again — no questions asked, no extra charge.</div></div>
+    <div class="trust-item"><div class="trust-item-title">🏠 Residential & Commercial</div><div class="trust-item-desc">Homes, offices, Airbnb, VRBO, post-construction — we handle it all.</div></div>
+  </div>
+</div>
+
+<div class="stats-row">
+  <div class="stat"><div class="stat-n">5.0★</div><div class="stat-l">Google Rating</div></div>
+  <div class="stat"><div class="stat-n">Same</div><div class="stat-l">Day Available</div></div>
+  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Satisfaction Guarantee</div></div>
+  <div class="stat"><div class="stat-n">$45</div><div class="stat-l">Starting Rate</div></div>
+</div>
+
+<div class="section" id="services">
+  <div class="eyebrow">Services</div>
+  <h2 class="title">Everything We <em>Clean</em></h2>
+  <div class="services-grid">
+    <div class="svc"><div class="svc-icon">🧹</div><div class="svc-name">Deep Cleaning</div><div class="svc-desc">Top-to-bottom thorough cleaning. Every corner, surface, and detail — nothing missed.</div></div>
+    <div class="svc"><div class="svc-icon">✨</div><div class="svc-name">Basic Cleaning</div><div class="svc-desc">Regular maintenance cleaning to keep your home consistently fresh and tidy.</div></div>
+    <div class="svc"><div class="svc-icon">🏗️</div><div class="svc-name">Post-Construction</div><div class="svc-desc">Dust, debris, and residue from renovations completely cleared. Ready to move in.</div></div>
+    <div class="svc"><div class="svc-icon">📦</div><div class="svc-name">Move In / Move Out</div><div class="svc-desc">Leave your old place spotless or start fresh in your new one. Security deposit quality.</div></div>
+    <div class="svc"><div class="svc-icon">🎉</div><div class="svc-name">After-Party Cleaning</div><div class="svc-desc">Host the party, we'll handle the aftermath. Back to normal by morning.</div></div>
+    <div class="svc"><div class="svc-icon">🏢</div><div class="svc-name">Airbnb / VRBO</div><div class="svc-desc">Fast, reliable turnovers between guests. 5-star ready every time.</div></div>
+  </div>
+</div>
+
+<div class="process-section">
+  <div class="process-inner">
+    <div class="eyebrow" style="color:var(--sage2)">How It Works</div>
+    <h2 class="title" style="color:#fff">Simple <em style="color:var(--sage2)">Process</em></h2>
+    <div class="process-grid">
+      <div class="step"><div class="step-num">01</div><div class="step-title">Call or Text</div><div class="step-desc">Reach out to (314) 619-8742. Tell us what you need and when. Free estimate, no pressure.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">We Schedule</div><div class="step-desc">Same day or next day options available. We work around your schedule.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">We Clean</div><div class="step-desc">Our team arrives on time and gives your space a thorough, professional clean.</div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-title">You're Happy</div><div class="step-desc">100% satisfaction guaranteed. If you're not thrilled, we come back and fix it free.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="reviews-section" id="reviews">
+  <div class="reviews-inner">
+    <div class="eyebrow">Reviews</div>
+    <h2 class="title">What Clients <em>Say</em></h2>
+    <div class="rev-grid">
+      <div class="rev"><div class="rev-stars">★★★★★</div><p class="rev-text">"Blessed Cleaning has been taking care of our house for over a year and we couldn't be happier! They're always on time and do an excellent job. They go the extra mile every time."</p><div class="rev-author">— Google Review</div></div>
+      <div class="rev"><div class="rev-stars">★★★★★</div><p class="rev-text">"This mother-and-daughter duo is truly outstanding. Professional, reliable, and always show up when scheduled. They take their time and leave my home spotless from top to bottom."</p><div class="rev-author">— Google Review</div></div>
+      <div class="rev"><div class="rev-stars">★★★★★</div><p class="rev-text">"She cleaned my refrigerator, oven, moved my furniture, vacuumed my couch, cleaned every corner. Even the walls and doors without me asking. The best $200 I ever spent."</p><div class="rev-author">— Google Review</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section" id="contact">
+  <h2>Ready for a Spotless Home?</h2>
+  <p>Call or text now for a free estimate. Same or next day service available. Fully insured, satisfaction guaranteed.</p>
+  <a href="tel:3146198742" class="cta-phone">(314) 619-8742</a>
+  <a href="tel:3146198742" class="btn-white" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Get Your Free Quote</a>
+</div>
+
+<footer>
+  <div class="fl">Blessed Cleaning · St. Charles, MO</div>
+  <div class="fc">© 2026 Blessed Cleaning · (314) 619-8742 · Insured · Residential & Commercial</div>
+</footer>
+<script>
+const o=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.style.opacity='1';i.target.style.transform='translateY(0)'}})},{threshold:0.1});
+document.querySelectorAll('.svc,.rev,.step,.stat,.trust-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(14px)';el.style.transition='opacity .5s ease,transform .5s ease';o.observe(el)});
+</script>
+<div class="cur" id="cur" style="background:#4A7C6F"></div><div class="cur-ring" id="curR" style="border-color:#4A7C6F"></div>
+<script>
+const C=document.getElementById("cur"),R=document.getElementById("curR");
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener("mousemove",e=>{mx=e.clientX;my=e.clientY;C.style.left=mx+"px";C.style.top=my+"px"});
+(function loop(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;R.style.left=rx+"px";R.style.top=ry+"px";requestAnimationFrame(loop)})();
+document.querySelectorAll("a,button,.svc,.svc-card,.rev,.service-card,.trust-card,.stat").forEach(el=>{el.addEventListener("mouseenter",()=>{R.style.transform="translate(-50%,-50%) scale(2.2)";R.style.opacity="0.9"});el.addEventListener("mouseleave",()=>{R.style.transform="translate(-50%,-50%) scale(1)";R.style.opacity="0.5"})});
+</script>
+<div class="modal-overlay" id="bookModal"><div class="modal-box"><button class="modal-close" onclick="closeModal()"></body>times;</button><h3>Blessed Cleaning</h3><p>Ready to book? Give us a call or find us on the map.</p><a href="tel:3146198742" class="modal-phone">(314) 619-8742</a><div class="modal-addr">St. Charles, MO 63301</div><div class="modal-btns"><a href="tel:3146198742" class="modal-btn-call">Call Now</a><a href="https://maps.google.com/?q=Blessed+Cleaning+St+Charles+MO" target="_blank" class="modal-btn-map">Get Directions</a></div></div></div><script>function openBookModal(){document.getElementById('bookModal').classList.add('active')}function closeModal(){document.getElementById('bookModal').classList.remove('active')}document.getElementById('bookModal').addEventListener('click',function(e){if(e.target===this)closeModal()});</script>
+</body>
+</html>
