@@ -3,158 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blessed Cleaning | St. Charles, MO</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Blessed Cleaning | St. Charles, MO · 5★ House Cleaning</title>
+<!-- SEO -->
+<meta name="description" content="Blessed Cleaning is a trusted 5-star house cleaning service in St. Charles, MO. Reliable, detailed residential and move-in/move-out cleaning. Book today - (314) 619-8742.">
+<meta name="keywords" content="house cleaning St. Charles MO, residential cleaning, maid service, deep cleaning, move out cleaning">
+<meta name="author" content="Blessed Cleaning">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0a0a0a">
+<meta name="geo.region" content="US-MO">
+<meta name="geo.placename" content="St. Charles, Missouri">
+<meta name="geo.position" content="38.7881;-90.4974">
+<meta name="ICBM" content="38.7881, -90.4974">
+<link rel="canonical" href="https://blessed-cleaning-stl.netlify.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Blessed Cleaning">
+<meta property="og:title" content="Blessed Cleaning | St. Charles, MO">
+<meta property="og:description" content="Blessed Cleaning is a trusted 5-star house cleaning service in St. Charles, MO. Reliable, detailed residential and move-in/move-out cleaning. Book today - (314) 619-8742.">
+<meta property="og:url" content="https://blessed-cleaning-stl.netlify.app/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&q=80&auto=format&fit=crop">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blessed Cleaning | St. Charles, MO">
+<meta name="twitter:description" content="Blessed Cleaning is a trusted 5-star house cleaning service in St. Charles, MO. Reliable, detailed residential and move-in/move-out cleaning. Book today - (314) 619-8742.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&q=80&auto=format&fit=crop">
+
+<!-- LocalBusiness structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://blessed-cleaning-stl.netlify.app/#business",
+  "name": "Blessed Cleaning",
+  "description": "Blessed Cleaning is a trusted 5-star house cleaning service in St. Charles, MO. Reliable, detailed residential and move-in/move-out cleaning. Book today - (314) 619-8742.",
+  "url": "https://blessed-cleaning-stl.netlify.app/",
+  "telephone": "+1-314-619-8742",
+  "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&h=630&q=80&auto=format&fit=crop",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "St. Charles",
+    "addressRegion": "MO",
+    "postalCode": "63301",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.7881,
+    "longitude": -90.4974
+  },
+  "areaServed": "St. Charles County, MO",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "07:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Sunday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ]
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--sage:#4A7C6F;--sage2:#6FA99A;--sage3:#D4EAE5;--white:#FFFFFF;--off:#F7F9F8;--dark:#1A2B27;--gray:#6B7E79;--border:rgba(74,124,111,0.15)}
+:root{--sage:#4A7C6F;--sage2:#6FA99A;--sage3:#D4EAE5;--sage4:#9CC7BC;--white:#FFFFFF;--off:#F7F9F8;--dark:#1A2B27;--dark2:#0F1A17;--gray:#6B7E79;--gray2:#94A6A1;--border:rgba(74,124,111,0.15)}
 body{background:var(--white);color:var(--dark);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;padding:0 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--dark)}
+.scroll-bar{position:fixed;top:0;left:0;height:2px;width:0;background:var(--sage);z-index:200;transition:width .12s linear}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:68px;padding:0 3rem;display:flex;align-items:center;justify-content:space-between;background:rgba(255,255,255,0.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:700;color:var(--dark);white-space:nowrap}
 .logo em{color:var(--sage);font-style:italic}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
 .nav-links a{font-size:.78rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--sage)}
-.nav-cta{background:var(--sage);color:#fff;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;padding:10px 24px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:background .2s;text-decoration:none}
+.nav-cta{background:var(--sage);color:#fff;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;padding:11px 24px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;transition:background .2s;text-decoration:none;border-radius:2px}
 .nav-cta:hover{background:var(--sage2)}
-.hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;padding-top:68px}
-.hero-left{padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;background:var(--off)}
-.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--sage3);color:var(--sage);font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:20px;margin-bottom:2rem;width:fit-content}
-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,6rem);line-height:1;font-weight:700;margin-bottom:1.5rem;color:var(--dark)}
-h1 em{font-style:italic;color:var(--sage)}
-.hero-sub{font-size:.95rem;color:var(--gray);line-height:1.9;font-weight:300;max-width:420px;margin-bottom:3rem}
-.hero-btns{display:flex;gap:1rem}
-.btn-sage{background:var(--sage);color:#fff;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:14px 32px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:all .2s;text-decoration:none;display:inline-block}
+
+/* SCROLLYTELLING */
+.story{position:relative;height:600vh;background:var(--dark)}
+.story-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center;justify-content:center}
+#storyCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:1}
+.story-vignette{position:absolute;inset:0;background:radial-gradient(ellipse at center,transparent 30%,rgba(0,0,0,.5) 100%);z-index:2;pointer-events:none}
+
+.beat{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:6rem 3rem 4rem;z-index:3;pointer-events:none;opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.beat.in{opacity:1;transform:translateY(0);pointer-events:auto}
+.beat-inner{max-width:1100px;width:100%;margin:0 auto}
+.beat-tag{display:inline-block;background:rgba(212,234,229,.18);border:1px solid rgba(212,234,229,.4);color:var(--sage3);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;padding:7px 16px;margin-bottom:2rem;font-weight:600;backdrop-filter:blur(4px);border-radius:100px}
+.beat-h1{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(3.5rem,10vw,11rem);line-height:.92;color:#fff;margin-bottom:1.5rem;text-shadow:0 4px 24px rgba(0,0,0,.6)}
+.beat-h1 em{color:var(--sage3);font-style:italic;display:block;text-shadow:0 4px 24px rgba(0,0,0,.6),0 0 30px rgba(212,234,229,.3)}
+.beat-sub{font-size:1.05rem;color:rgba(255,255,255,.9);line-height:1.85;font-weight:300;max-width:540px;margin-bottom:2.5rem;text-shadow:0 2px 8px rgba(0,0,0,.85)}
+.beat-stat{display:flex;gap:3rem;margin-top:2rem;flex-wrap:wrap}
+.beat-stat-item{display:flex;flex-direction:column;color:#fff}
+.bs-num{font-family:'Cormorant Garamond',serif;font-size:2.5rem;color:var(--sage3);line-height:1;text-shadow:0 4px 16px rgba(0,0,0,.5)}
+.bs-label{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:600;margin-top:.4rem}
+
+.beat-1 .beat-inner{text-align:left}
+.beat-2 .beat-inner{text-align:right;margin-left:auto}
+.beat-3 .beat-inner{text-align:left}
+.beat-4 .beat-inner{text-align:center}
+.beat-5 .beat-inner{text-align:right;margin-left:auto}
+.beat-6 .beat-inner{text-align:center;padding-bottom:5rem}
+
+.beat-rail{position:absolute;right:2rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:1.4rem;z-index:5;align-items:flex-end}
+.brail-dot{display:flex;align-items:center;gap:14px;color:rgba(255,255,255,.4);font-size:.6rem;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;cursor:pointer;transition:color .3s}
+.brail-dot::after{content:'';width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);transition:all .3s}
+.brail-dot.active{color:var(--sage3)}
+.brail-dot.active::after{background:var(--sage3);transform:scale(1.5);box-shadow:0 0 16px rgba(212,234,229,.7)}
+
+.btn-sage{background:var(--sage);color:#fff;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:15px 32px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;border-radius:2px;transition:background .2s;text-decoration:none;display:inline-block}
 .btn-sage:hover{background:var(--sage2)}
-.btn-outline{background:transparent;color:var(--sage);font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:13px 32px;border:1.5px solid var(--sage);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;border-radius:2px;transition:all .2s;text-decoration:none;display:inline-block}
-.btn-outline:hover{background:var(--sage3)}
-.hero-right{background:var(--sage);padding:5rem 4rem;display:flex;flex-direction:column;justify-content:center;gap:1.5rem;position:relative;overflow:hidden}
-.hero-right::before{content:'✦';position:absolute;font-size:20rem;color:rgba(255,255,255,0.03);top:-4rem;right:-4rem;pointer-events:none}
-.trust-item{background:rgba(255,255,255,0.1);padding:1.5rem 2rem;border-left:3px solid rgba(255,255,255,0.4);backdrop-filter:blur(4px)}
-.trust-item-title{font-weight:600;font-size:.95rem;color:#fff;margin-bottom:.3rem}
-.trust-item-desc{font-size:.82rem;color:rgba(255,255,255,0.7);font-weight:300;line-height:1.6}
-.stats-row{background:var(--dark);padding:3rem;display:grid;grid-template-columns:repeat(4,1fr)}
-.stat{padding:1.5rem 2rem;border-right:1px solid rgba(255,255,255,0.08);text-align:center}
-.stat:last-child{border-right:none}
-.stat-n{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:700;color:var(--sage2);line-height:1}
-.stat-l{font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-top:.3rem}
-.section{padding:6rem 3rem;max-width:1200px;margin:0 auto}
-.eyebrow{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:.8rem}
-.title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:700;line-height:1;margin-bottom:1.5rem}
+.btn-ow{background:rgba(255,255,255,.08);backdrop-filter:blur(4px);color:#fff;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;padding:14px 32px;border:1px solid rgba(255,255,255,.35);cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:all .2s;text-decoration:none;display:inline-block}
+.btn-ow:hover{background:#fff;color:var(--dark)}
+.beat-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.beat-1 .beat-btns,.beat-3 .beat-btns{justify-content:flex-start}
+.beat-2 .beat-btns,.beat-5 .beat-btns{justify-content:flex-end}
+.beat-4 .beat-btns,.beat-6 .beat-btns{justify-content:center}
+.magnetic{transition:transform .3s cubic-bezier(.2,.7,.3,1)}
+.magnetic-inner{display:inline-block;transition:transform .3s cubic-bezier(.2,.7,.3,1);pointer-events:none}
+
+.marquee{background:var(--sage);padding:.7rem 0;overflow:hidden;position:relative;z-index:4}
+.mt{display:flex;animation:scroll 20s linear infinite;white-space:nowrap}
+.mi{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;color:#fff;padding:0 2.5rem;display:flex;align-items:center;gap:2.5rem}
+.mi::after{content:'✦';opacity:.6;font-size:.7rem}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.section{padding:7rem 3rem;max-width:1300px;margin:0 auto}
+.eyebrow{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:32px;height:1px;background:var(--sage)}
+.title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,5rem);font-weight:700;line-height:1;margin-bottom:1.5rem;letter-spacing:-1px}
 .title em{font-style:italic;color:var(--sage)}
+
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
-.svc{background:var(--off);padding:2.5rem;border:1px solid var(--border);border-radius:4px;transition:all .3s;position:relative;overflow:hidden}
+.svc{background:var(--off);padding:3rem 2.5rem;border:1px solid var(--border);border-radius:4px;transition:all .3s;position:relative;overflow:hidden}
 .svc:hover{border-color:var(--sage);transform:translateY(-3px);box-shadow:0 12px 32px rgba(74,124,111,0.1)}
 .svc-icon{width:48px;height:48px;background:var(--sage3);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;font-size:1.3rem}
 .svc-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:700;margin-bottom:.6rem}
-.svc-desc{font-size:.83rem;color:var(--gray);line-height:1.7;font-weight:300}
-.process-section{background:var(--dark);padding:6rem 3rem}
+.svc-desc{font-size:.85rem;color:var(--gray);line-height:1.85;font-weight:300}
+
+/* GALLERY: HORIZONTAL PINNED */
+.gallery-section{position:relative;background:var(--off);min-height:100vh;border-top:1px solid var(--border)}
+.gallery-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
+.gallery-track{display:flex;align-items:center;gap:1.5rem;padding:0 5vw;will-change:transform;height:100%}
+.gallery-intro{flex-shrink:0;width:44vw;max-width:580px;display:flex;flex-direction:column;justify-content:center;padding-right:3rem}
+.gallery-intro p{font-size:.92rem;color:var(--gray);line-height:1.9;font-weight:300;max-width:480px;margin-top:1rem}
+.gallery-counter{margin-top:2.5rem;display:flex;align-items:baseline;gap:1rem;color:var(--sage);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;font-weight:600}
+.gallery-counter span{font-family:'Cormorant Garamond',serif;font-size:2.2rem;color:var(--dark)}
+.gtile{flex-shrink:0;width:36vw;max-width:520px;height:75vh;max-height:660px;position:relative;overflow:hidden;background:linear-gradient(135deg,#D4EAE5,#F7F9F8);border:1px solid var(--border);border-radius:6px;transition:border-color .5s,box-shadow .5s}
+.gtile:hover{border-color:var(--sage);box-shadow:0 24px 60px rgba(74,124,111,.15)}
+.gtile-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.2s cubic-bezier(.22,1,.36,1)}
+.gtile:hover .gtile-bg{transform:scale(1.08)}
+.gtile-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(74,124,111,.2);font-size:8rem}
+.gtile-info{position:absolute;bottom:0;left:0;right:0;padding:1.8rem 2rem;background:linear-gradient(transparent,rgba(255,255,255,.96));z-index:3;transform:translateY(20%);opacity:.9;transition:transform .6s cubic-bezier(.22,1,.36,1),opacity .5s}
+.gtile:hover .gtile-info{transform:translateY(0);opacity:1}
+.gtile-style{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:.4rem}
+.gtile-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--dark);font-weight:700;line-height:1.2}
+.gtile-badge{position:absolute;top:1.2rem;left:1.2rem;background:var(--sage);color:#fff;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;padding:6px 12px;border-radius:14px;z-index:3}
+.gallery-cta{flex-shrink:0;width:34vw;max-width:440px;display:flex;flex-direction:column;justify-content:center;padding:0 2rem}
+.gallery-cta h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.6rem);font-weight:700;margin-bottom:1.5rem;line-height:1.05}
+.gallery-cta h3 em{color:var(--sage);font-style:italic}
+.gallery-cta p{font-size:.9rem;color:var(--gray);line-height:1.9;font-weight:300;margin-bottom:2rem}
+
+/* PROCESS */
+.process-section{background:var(--dark);color:#fff;padding:6rem 3rem}
 .process-inner{max-width:1200px;margin:0 auto}
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem}
-.step{padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,0.07);position:relative}
+.process-section .eyebrow{color:var(--sage3)}
+.process-section .eyebrow::before{background:var(--sage3)}
+.process-section .title{color:#fff}
+.process-section .title em{color:var(--sage3)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem}
+.step{padding:2.5rem 2rem;border-right:1px solid rgba(255,255,255,.07)}
 .step:last-child{border-right:none}
-.step-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:rgba(111,169,154,0.2);line-height:1;margin-bottom:1rem}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:4rem;font-weight:700;color:rgba(111,169,154,.25);line-height:1;margin-bottom:1rem}
 .step-title{font-weight:600;font-size:1rem;color:#fff;margin-bottom:.5rem}
-.step-desc{font-size:.83rem;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300}
-.reviews-section{background:var(--off);padding:6rem 3rem}
+.step-desc{font-size:.83rem;color:rgba(255,255,255,.5);line-height:1.85;font-weight:300}
+
+.reviews-section{background:var(--off);padding:7rem 3rem}
 .reviews-inner{max-width:1200px;margin:0 auto}
 .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
-.rev{background:#fff;padding:2.5rem;border:1px solid var(--border);border-radius:4px}
-.rev-stars{color:var(--sage);margin-bottom:1rem;letter-spacing:2px}
-.rev-text{font-size:.87rem;color:var(--gray);line-height:1.9;font-style:italic;margin-bottom:1.5rem;font-weight:300}
-.rev-author{font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage)}
-.cta-section{background:var(--sage);padding:7rem 3rem;text-align:center}
-.cta-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,7rem);font-style:italic;color:#fff;line-height:1;margin-bottom:1.5rem;font-weight:700}
-.cta-section p{color:rgba(255,255,255,0.75);font-size:.95rem;max-width:400px;margin:0 auto 3rem;line-height:1.9;font-weight:300}
-.cta-phone{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:#fff;display:block;margin-bottom:2rem;text-decoration:none}
-.btn-white{background:#fff;color:var(--sage);font-size:.82rem;letter-spacing:2px;text-transform:uppercase;padding:16px 48px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;border-radius:2px;transition:all .2s;display:inline-block;text-decoration:none}
-.btn-white:hover{background:var(--sage3)}
-footer{background:var(--dark);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.fl{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--sage2)}
-.fc{font-size:.7rem;letter-spacing:1px;color:rgba(255,255,255,0.3)}
-@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-.fi{opacity:0;animation:fadeUp .7s ease forwards}
-.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-right{display:none}.nav-links{display:none}.section,.reviews-section,.process-section,.cta-section{padding:4rem 1.5rem}.services-grid,.rev-grid,.process-grid{grid-template-columns:1fr}.stats-row{grid-template-columns:1fr 1fr}}
-.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;align-items:center;justify-content:center}.modal-overlay.active{display:flex}.modal-box{background:#fff;max-width:400px;width:90%;padding:2.5rem;text-align:center;position:relative;animation:popIn .25s ease}.modal-box h3{font-size:1.2rem;color:#1a1a1a;margin-bottom:.5rem;font-weight:700}.modal-box p{font-size:.85rem;color:#666;line-height:1.6;margin-bottom:1.5rem}.modal-phone{font-size:1.8rem;font-weight:900;color:#4A7C6F;display:block;margin-bottom:1rem;text-decoration:none}.modal-addr{font-size:.82rem;color:#888;margin-bottom:1.5rem}.modal-btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}.modal-btn-call{background:#4A7C6F;color:#fff;padding:12px 28px;border:none;cursor:pointer;font-weight:700;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block}.modal-btn-map{background:transparent;color:#4A7C6F;padding:11px 28px;border:1.5px solid #4A7C6F;cursor:pointer;font-weight:700;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block}.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#999;line-height:1}@keyframes popIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+.rev{background:#fff;border:1px solid var(--border);padding:2.5rem;transition:border-color .3s,transform .3s}
+.rev:hover{border-color:rgba(111,169,154,.5);transform:translateY(-3px)}
+.rev-stars{color:var(--sage);letter-spacing:2px;margin-bottom:1rem;font-size:.85rem}
+.rev-text{font-size:.86rem;color:rgba(74,124,111,.6);line-height:1.9;font-style:italic;margin-bottom:1.5rem;font-weight:300}
+.rev-author{font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--sage);font-style:italic;font-weight:700}
 
-/* ============ LENIS SMOOTH SCROLL ============ */
-html.lenis,html.lenis body{height:auto}
-.lenis.lenis-smooth{scroll-behavior:auto!important}
-.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
-.lenis.lenis-stopped{overflow:hidden}
+.info-section{background:var(--off);padding:7rem 3rem;border-top:1px solid var(--border)}
+.info-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem}
+.contact-cards{display:flex;flex-direction:column;gap:1.2rem;margin-top:2.5rem}
+.ccard{background:#fff;padding:1.8rem 2rem;display:flex;gap:1.2rem;align-items:center;border:1px solid var(--border);border-radius:8px}
+.ccard-label{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--sage);margin-bottom:.3rem;font-weight:600}
+.ccard-val{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:1.05rem}
+.hours-list{margin-top:2.5rem}
+.hr{display:flex;justify-content:space-between;padding:.9rem 0;border-bottom:1px solid var(--border)}
+.hr-day{font-size:.78rem;letter-spacing:1px;text-transform:uppercase;color:var(--gray)}
+.hr-time{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:.92rem;color:var(--dark)}
 
-/* ============ SCROLL PROGRESS BAR ============ */
-.scroll-bar{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--sage),var(--sage2));z-index:200;transition:width .12s linear}
-
-/* ============ HERO 3D LAYER ============ */
-.hero-left{position:relative;overflow:hidden}
-#heroCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.85}
-.hero-glow{position:absolute;width:55vw;height:55vw;max-width:700px;max-height:700px;border-radius:50%;background:radial-gradient(circle at center,rgba(111,169,154,0.18) 0%,rgba(212,234,229,0.08) 35%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:0;filter:blur(20px)}
-.hero-left>*:not(#heroCanvas):not(.hero-glow){position:relative;z-index:2}
-
-/* ============ SPLIT TEXT REVEAL ============ */
-.split-line{display:block;overflow:hidden;line-height:1.05}
-.split-char{display:inline-block;will-change:transform,opacity;transform:translateY(110%);opacity:0;transition:transform 1s cubic-bezier(.22,1,.36,1),opacity .9s ease}
-.split-char.in{transform:translateY(0);opacity:1}
-.split-word{display:inline-block;white-space:nowrap}
-
-/* ============ MAGNETIC BUTTONS ============ */
-.magnetic{transition:transform .35s cubic-bezier(.2,.7,.3,1)}
-.magnetic-inner{display:inline-block;transition:transform .35s cubic-bezier(.2,.7,.3,1);pointer-events:none}
-
-/* ============ PORTFOLIO HORIZONTAL SCROLL (Before/After) ============ */
-.portfolio-section{position:relative;background:var(--off);min-height:100vh}
-.portfolio-pin{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
-.portfolio-track{display:flex;align-items:center;gap:1.5rem;padding:0 5vw;will-change:transform;height:100%}
-.portfolio-intro{flex-shrink:0;width:44vw;max-width:580px;display:flex;flex-direction:column;justify-content:center;padding-right:3rem}
-.portfolio-intro p{font-size:.95rem;color:var(--gray);line-height:1.9;font-weight:300;max-width:420px}
-.portfolio-counter{margin-top:2.5rem;display:flex;align-items:baseline;gap:1rem;font-size:.7rem;letter-spacing:3px;color:var(--sage);text-transform:uppercase;font-weight:600}
-.portfolio-counter span{font-family:'Cormorant Garamond',serif;font-size:2.5rem;font-weight:700;color:var(--dark)}
-.portfolio-tile{flex-shrink:0;width:36vw;max-width:500px;height:76vh;max-height:660px;position:relative;overflow:hidden;background:linear-gradient(135deg,#D4EAE5 0%,#F7F9F8 100%);border:1px solid var(--border);border-radius:6px;transition:border-color .5s,box-shadow .5s}
-.portfolio-tile:hover{border-color:var(--sage);box-shadow:0 24px 60px rgba(74,124,111,0.15)}
-.portfolio-tile .ptile-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.2s cubic-bezier(.22,1,.36,1),filter .8s ease;filter:brightness(1) contrast(1);will-change:transform}
-.portfolio-tile:hover .ptile-bg{transform:scale(1.08)}
-.portfolio-tile .ptile-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(74,124,111,.2);font-size:8rem;background:linear-gradient(135deg,#D4EAE5 0%,#F7F9F8 100%)}
-.ptile-info{position:absolute;bottom:0;left:0;right:0;padding:1.8rem 2rem;background:linear-gradient(transparent,rgba(255,255,255,.96));z-index:3;transform:translateY(20%);opacity:.92;transition:transform .6s cubic-bezier(.22,1,.36,1),opacity .5s}
-.portfolio-tile:hover .ptile-info{transform:translateY(0);opacity:1}
-.ptile-style{font-size:.65rem;letter-spacing:3px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:.4rem}
-.ptile-name{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--dark);font-weight:700;line-height:1.2}
-.ptile-badge{position:absolute;top:1.2rem;left:1.2rem;background:var(--sage);color:#fff;font-size:.62rem;letter-spacing:2px;text-transform:uppercase;font-weight:600;padding:6px 12px;border-radius:14px;z-index:3}
-.ptile-corner{position:absolute;top:1.2rem;right:1.2rem;width:36px;height:36px;border:1px solid rgba(74,124,111,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--sage);font-size:.7rem;font-weight:600;z-index:3;background:rgba(255,255,255,.85);backdrop-filter:blur(6px)}
-.portfolio-cta{flex-shrink:0;width:34vw;max-width:440px;display:flex;flex-direction:column;justify-content:center;padding:0 2rem}
-.portfolio-cta h3{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3vw,2.8rem);color:var(--dark);font-weight:700;margin-bottom:1.5rem;line-height:1.05}
-.portfolio-cta h3 em{color:var(--sage);font-style:italic}
-.portfolio-cta p{font-size:.9rem;color:var(--gray);line-height:1.9;font-weight:300;margin-bottom:2rem}
-
-/* ============ PROCESS STICKY STEPS ============ */
-.process-sticky-section{position:relative;background:var(--dark);height:420vh}
-.process-pin{position:sticky;top:0;height:100vh;display:flex;align-items:center;overflow:hidden}
-.process-inner-new{max-width:1200px;width:100%;margin:0 auto;padding:0 3rem;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;position:relative;z-index:2}
-.process-stage-new{position:relative;height:60vh;max-height:520px;display:flex;align-items:center;justify-content:center}
-.process-bignum{font-family:'Cormorant Garamond',serif;font-size:clamp(14rem,28vw,26rem);font-weight:700;color:transparent;-webkit-text-stroke:1px rgba(111,169,154,.55);line-height:.8;position:absolute;opacity:0;transform:translateY(40px) scale(.9);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1);pointer-events:none}
-.process-bignum.active{opacity:1;transform:translateY(0) scale(1)}
-.process-bignum.exit{opacity:0;transform:translateY(-40px) scale(1.1)}
-.process-content-new{position:relative;height:60vh;max-height:520px}
-.process-card{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateX(40px);transition:opacity .7s cubic-bezier(.22,1,.36,1),transform .7s cubic-bezier(.22,1,.36,1);pointer-events:none}
-.process-card.active{opacity:1;transform:translateX(0);pointer-events:auto}
-.process-card.exit{opacity:0;transform:translateX(-40px)}
-.pc-eyebrow{font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--sage2);font-weight:600;margin-bottom:1rem;display:flex;align-items:center;gap:14px}
-.pc-eyebrow::before{content:'';width:32px;height:1px;background:var(--sage2)}
-.pc-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,3.6rem);font-weight:700;line-height:1;margin-bottom:1.5rem;color:#fff}
-.pc-title em{color:var(--sage2);font-style:italic;display:block}
-.pc-desc{font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.9;font-weight:300;max-width:440px;margin-bottom:1.5rem}
-.pc-meta{display:flex;gap:2.5rem;border-top:1px solid rgba(255,255,255,.08);padding-top:1.2rem;margin-top:.5rem}
-.pcm-label{font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage2);font-weight:600;margin-bottom:.3rem}
-.pcm-val{font-size:.95rem;color:#fff;font-weight:500}
-.process-rail{position:absolute;left:2.5rem;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:1.4rem;z-index:5}
-.pr-dot{width:8px;height:8px;border-radius:50%;background:rgba(111,169,154,.25);transition:background .4s,transform .4s;position:relative;cursor:pointer}
-.pr-dot::before{content:attr(data-label);position:absolute;left:24px;top:50%;transform:translateY(-50%);font-size:.6rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.4);white-space:nowrap;opacity:0;transition:opacity .3s;font-weight:600}
-.pr-dot.active{background:var(--sage2);transform:scale(1.6)}
-.pr-dot.active::before{opacity:1;color:var(--sage2)}
-
-/* ============ BOOKING FORM SECTION ============ */
-.booking-section{background:var(--off);padding:6rem 3rem;border-top:1px solid var(--border)}
+.booking-section{background:var(--white);padding:7rem 3rem;border-top:1px solid var(--border)}
 .booking-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
 .booking-side p{font-size:.95rem;color:var(--gray);line-height:1.9;font-weight:300;margin-bottom:2rem;max-width:380px}
 .booking-side a{color:var(--sage);text-decoration:none;font-weight:600}
@@ -163,75 +227,155 @@ html.lenis,html.lenis body{height:auto}
 .form-group label{font-size:.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:.5rem}
 .form-group input,.form-group select,.form-group textarea{background:#fff;border:1px solid var(--border);color:var(--dark);font-family:'Plus Jakarta Sans',sans-serif;font-size:.92rem;padding:.85rem 1rem;outline:none;transition:border-color .2s;-webkit-appearance:none;border-radius:3px}
 .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--sage)}
-.form-group input::placeholder,.form-group textarea::placeholder{color:#b5beba}
-.booking-success{padding:2rem 0}
 
-/* ============ MOBILE OVERRIDES FOR NEW SECTIONS ============ */
+.cta-section{background:var(--sage);padding:7rem 3rem;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'✦';position:absolute;font-size:32rem;top:50%;left:50%;transform:translate(-50%,-50%);color:rgba(0,0,0,.05);pointer-events:none;line-height:.8}
+.cta-section>*{position:relative;z-index:1}
+.cta-section h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,6rem);font-style:italic;color:#fff;line-height:.95;margin-bottom:1.5rem;font-weight:700}
+.cta-section p{color:rgba(255,255,255,.75);font-size:.95rem;max-width:400px;margin:0 auto 3rem;line-height:1.9;font-weight:300}
+.cta-phone{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:700;color:#fff;display:block;margin-bottom:2rem;text-decoration:none}
+.btn-white{background:#fff;color:var(--sage);font-size:.82rem;letter-spacing:2px;text-transform:uppercase;padding:16px 48px;border:none;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;border-radius:2px;transition:background .2s;display:inline-block;text-decoration:none}
+.btn-white:hover{background:var(--sage3)}
+
+footer{background:var(--dark);padding:2rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.fl{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:var(--sage2)}
+.fc{font-size:.7rem;letter-spacing:1px;color:rgba(255,255,255,.3)}
+
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:10000;align-items:center;justify-content:center}.modal-overlay.active{display:flex}
+.modal-box{background:#fff;max-width:400px;width:90%;padding:2.5rem;text-align:center;position:relative;animation:popIn .25s ease;border-radius:8px}
+.modal-box h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--dark);margin-bottom:.5rem;font-weight:700}
+.modal-box p{font-size:.85rem;color:#666;line-height:1.6;margin-bottom:1.5rem}
+.modal-phone{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:var(--sage);display:block;margin-bottom:1rem;text-decoration:none}
+.modal-addr{font-size:.82rem;color:#888;margin-bottom:1.5rem}
+.modal-btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.modal-btn-call{background:var(--sage);color:#fff;padding:12px 28px;border:none;cursor:pointer;font-weight:600;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px}
+.modal-btn-map{background:transparent;color:var(--sage);padding:11px 28px;border:1.5px solid var(--sage);cursor:pointer;font-weight:600;font-size:.82rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;display:inline-block;border-radius:2px}
+.modal-close{position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#999;line-height:1}
+@keyframes popIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+
 @media(max-width:900px){
-  .portfolio-section{height:auto}
-  .portfolio-pin{position:relative;height:auto;padding:4rem 0}
-  .portfolio-track{flex-direction:column;gap:1.5rem;padding:0 1.5rem;transform:none!important;height:auto}
-  .portfolio-intro,.portfolio-cta{width:100%;padding:0}
-  .portfolio-tile{width:100%;height:60vh;max-height:480px}
-  .process-sticky-section{height:auto}
-  .process-pin{position:relative;height:auto;padding:4rem 1.5rem}
-  .process-inner-new{grid-template-columns:1fr;gap:2rem;padding:0}
-  .process-stage-new,.process-content-new{height:auto;min-height:160px}
-  .process-bignum{position:relative;opacity:1;transform:none;font-size:5rem}
-  .process-card{position:relative;opacity:1;transform:none;pointer-events:auto;margin-bottom:3rem}
-  .process-rail{display:none}
-  .booking-inner{grid-template-columns:1fr;gap:2.5rem;padding:0}
+  nav{padding:0 1.5rem;height:60px}
+  .nav-links{display:none}
+  .story{height:auto}
+  .story-pin{position:relative;height:auto;display:block;padding:5rem 0}
+  #storyCanvas{position:relative;width:100%;height:60vh;display:block}
+  .beat{position:relative;opacity:1;transform:none;padding:3rem 1.5rem;pointer-events:auto;justify-content:flex-start}
+  .beat-inner{text-align:left!important;margin-left:0!important}
+  .beat-rail{display:none}
+  .section,.process-section,.reviews-section,.info-section,.cta-section,.booking-section{padding:5rem 1.5rem}
+  .services-grid,.rev-grid,.info-inner,.steps-grid,.booking-inner{grid-template-columns:1fr;gap:3rem}
+  .gallery-section{min-height:auto}.gallery-pin{position:relative;height:auto;padding:4rem 0}
+  .gallery-track{flex-direction:column;gap:1.5rem;padding:0 1.5rem;transform:none!important;height:auto}
+  .gallery-intro,.gallery-cta{width:100%;padding:0}.gtile{width:100%;height:60vh;max-height:520px}
   .form-row{grid-template-columns:1fr}
-  .hero-glow{display:none}
-  #heroCanvas{display:none}
 }
 </style>
 </head>
 <body>
+<div class="scroll-bar" id="scrollBar"></div>
+
 <nav>
   <div class="logo">Blessed <em>Cleaning</em></div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
-    <li><a href="#portfolio">Work</a></li>
-    <li><a href="#process">Process</a></li>
+    <li><a href="#gallery">Work</a></li>
     <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#booking">Book</a></li>
+    <li><a href="#booking">Quote</a></li>
   </ul>
-  <a href="tel:3146198742" class="nav-cta" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Get a Quote</a>
+  <a href="tel:3146198742" class="nav-cta magnetic" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Get a Quote</a>
 </nav>
 
-<div class="scroll-bar" id="scrollBar"></div>
+<!-- SCROLLYTELLING -->
+<section class="story">
+  <div class="story-pin">
+    <canvas id="storyCanvas"></canvas>
+    <div class="story-vignette"></div>
 
-<div class="hero">
-  <div class="hero-left">
-    <canvas id="heroCanvas"></canvas>
-    <div class="hero-glow"></div>
-    <div class="hero-tag fi d1">⭐ 5.0 Stars · St. Charles, MO</div>
-    <h1 class="fi d2">A Clean Home,<em>Guaranteed.</em></h1>
-    <p class="hero-sub fi d3">Blessed Cleaning brings reliable, thorough residential and commercial cleaning to St. Charles. Insured, professional, and available same or next day.</p>
-    <div class="hero-btns fi d3">
-      <a href="tel:3146198742" class="btn-sage" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Call for a Quote</a>
-      <a href="#services" class="btn-outline">Our Services</a>
+    <div class="beat-rail" id="beatRail">
+      <div class="brail-dot active" data-beat="0">The Mess</div>
+      <div class="brail-dot" data-beat="1">Bubbles</div>
+      <div class="brail-dot" data-beat="2">The Swirl</div>
+      <div class="brail-dot" data-beat="3">Services</div>
+      <div class="brail-dot" data-beat="4">Spotless</div>
+      <div class="brail-dot" data-beat="5">Call Us</div>
+    </div>
+
+    <div class="beat beat-1 in">
+      <div class="beat-inner">
+        <div class="beat-tag">⭐ 5.0 Stars · St. Charles, MO</div>
+        <h1 class="beat-h1">A Clean Home,<em>Guaranteed.</em></h1>
+        <p class="beat-sub">Blessed Cleaning brings reliable, thorough residential and commercial cleaning to St. Charles. Insured, professional, and available same or next day.</p>
+        <div class="beat-btns">
+          <a href="tel:3146198742" class="btn-sage magnetic" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}"><span class="magnetic-inner">Call for a Quote</span></a>
+          <a href="#services" class="btn-ow magnetic"><span class="magnetic-inner">Our Services</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="beat beat-2">
+      <div class="beat-inner">
+        <div class="beat-tag">Mother-Daughter Team</div>
+        <h1 class="beat-h1">Real Care.<em>Real Results.</em></h1>
+        <p class="beat-sub" style="margin-left:auto">A mother-daughter team who treats your home like their own. Same crew every visit. Walls, doors, oven, under furniture — we don't cut corners. Customers say it's an "insane transformation."</p>
+        <div class="beat-stat" style="justify-content:flex-end">
+          <div class="beat-stat-item"><div class="bs-num">5.0★</div><div class="bs-label">Perfect Rating</div></div>
+          <div class="beat-stat-item"><div class="bs-num">100%</div><div class="bs-label">Satisfaction Guarantee</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="beat beat-3">
+      <div class="beat-inner">
+        <div class="beat-tag">The Process</div>
+        <h1 class="beat-h1">Top to Bottom.<em>Corner to Corner.</em></h1>
+        <p class="beat-sub">We work top-down, left-to-right — no surface skipped. You can leave during the clean or hang out, whatever's comfortable. Insured, supplies included.</p>
+      </div>
+    </div>
+
+    <div class="beat beat-4">
+      <div class="beat-inner">
+        <div class="beat-tag">Six Services</div>
+        <h1 class="beat-h1">All Your<em>Cleaning Needs.</em></h1>
+        <p class="beat-sub" style="margin:0 auto 2rem">Deep cleaning, basic recurring, post-construction, move-in/move-out, after-party, Airbnb turnovers. Residential and commercial both.</p>
+        <div class="beat-btns" style="justify-content:center">
+          <a href="#services" class="btn-sage magnetic"><span class="magnetic-inner">See Services</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="beat beat-5">
+      <div class="beat-inner">
+        <div class="beat-tag">The Result</div>
+        <h1 class="beat-h1">Looks New.<em>Smells New.</em></h1>
+        <p class="beat-sub" style="margin-left:auto">Customer quote: "She cleaned my refrigerator, oven, moved my furniture, vacuumed my couch, cleaned every corner — even the walls and doors without me asking. The best $200 I ever spent."</p>
+      </div>
+    </div>
+
+    <div class="beat beat-6">
+      <div class="beat-inner">
+        <div class="beat-tag">Ready for Spotless?</div>
+        <h1 class="beat-h1">Call Today.</h1>
+        <a href="tel:3146198742" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);color:var(--sage3);text-decoration:none;display:block;margin:1.5rem 0;font-weight:700;text-shadow:0 4px 24px rgba(0,0,0,.5)">(314) 619-8742</a>
+        <div class="beat-btns" style="justify-content:center">
+          <a href="tel:3146198742" class="btn-sage magnetic" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}"><span class="magnetic-inner">Free Quote</span></a>
+          <a href="#booking" class="btn-ow magnetic"><span class="magnetic-inner">Send a Note</span></a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="hero-right">
-    <div class="trust-item fi d2"><div class="trust-item-title">💯 Fully Insured</div><div class="trust-item-desc">Every clean is covered. Your home and belongings are fully protected on every visit.</div></div>
-    <div class="trust-item fi d3"><div class="trust-item-title">⚡ Same or Next Day</div><div class="trust-item-desc">Need it fast? We have immediate openings and can often accommodate same-day requests.</div></div>
-    <div class="trust-item"><div class="trust-item-title">✅ 100% Satisfaction</div><div class="trust-item-desc">Not happy? We come back and do it again — no questions asked, no extra charge.</div></div>
-    <div class="trust-item"><div class="trust-item-title">🏠 Residential & Commercial</div><div class="trust-item-desc">Homes, offices, Airbnb, VRBO, post-construction — we handle it all.</div></div>
+</section>
+
+<div class="marquee">
+  <div class="mt">
+    <div class="mi">Deep Cleaning</div><div class="mi">Move In / Out</div><div class="mi">Airbnb Turnovers</div><div class="mi">Post-Construction</div><div class="mi">Same-Day Service</div><div class="mi">Free Estimates</div>
+    <div class="mi">Deep Cleaning</div><div class="mi">Move In / Out</div><div class="mi">Airbnb Turnovers</div><div class="mi">Post-Construction</div><div class="mi">Same-Day Service</div><div class="mi">Free Estimates</div>
   </div>
 </div>
 
-<div class="stats-row">
-  <div class="stat"><div class="stat-n">5.0★</div><div class="stat-l">Google Rating</div></div>
-  <div class="stat"><div class="stat-n">Same</div><div class="stat-l">Day Available</div></div>
-  <div class="stat"><div class="stat-n">100%</div><div class="stat-l">Satisfaction Guarantee</div></div>
-  <div class="stat"><div class="stat-n">$45</div><div class="stat-l">Starting Rate</div></div>
-</div>
-
+<!-- SERVICES -->
 <div class="section" id="services">
   <div class="eyebrow">Services</div>
-  <h2 class="title">Everything We <em>Clean</em></h2>
+  <h2 class="title" data-split>Everything We <em>Clean</em></h2>
   <div class="services-grid">
     <div class="svc"><div class="svc-icon">🧹</div><div class="svc-name">Deep Cleaning</div><div class="svc-desc">Top-to-bottom thorough cleaning. Every corner, surface, and detail — nothing missed.</div></div>
     <div class="svc"><div class="svc-icon">✨</div><div class="svc-name">Basic Cleaning</div><div class="svc-desc">Regular maintenance cleaning to keep your home consistently fresh and tidy.</div></div>
@@ -242,127 +386,50 @@ html.lenis,html.lenis body{height:auto}
   </div>
 </div>
 
-<section class="portfolio-section" id="portfolio">
-  <div class="portfolio-pin">
-    <div class="portfolio-track" id="portfolioTrack">
-      <div class="portfolio-intro">
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="gallery-pin">
+    <div class="gallery-track" id="galleryTrack">
+      <div class="gallery-intro">
         <div class="eyebrow">Our Work</div>
         <h2 class="title" data-split>Spotless, Every <em>Time.</em></h2>
         <p>Every job tells the same story — we leave it cleaner than we found it. Scroll through recent transformations: homes, offices, post-construction, and Airbnb turnovers across St. Charles County.</p>
-        <div class="portfolio-counter"><span id="ptileCount">01</span><div>Recent Work · Scroll to Explore →</div></div>
+        <div class="gallery-counter"><span id="gcount">01</span><div>Recent · Scroll →</div></div>
       </div>
-      <div class="portfolio-tile" data-tile="1">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Deep Clean</div>
-        <div class="ptile-corner">01</div>
-        <div class="ptile-info"><div class="ptile-style">Kitchen · 6 hours</div><div class="ptile-name">Top-to-Bottom Reset</div></div>
-      </div>
-      <div class="portfolio-tile" data-tile="2">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Bathroom</div>
-        <div class="ptile-corner">02</div>
-        <div class="ptile-info"><div class="ptile-style">Master Bath · 3 hours</div><div class="ptile-name">Tile-to-Grout Sparkle</div></div>
-      </div>
-      <div class="portfolio-tile" data-tile="3">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Move Out</div>
-        <div class="ptile-corner">03</div>
-        <div class="ptile-info"><div class="ptile-style">2BR Apartment · 5 hours</div><div class="ptile-name">Security Deposit Back</div></div>
-      </div>
-      <div class="portfolio-tile" data-tile="4">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Post-Construction</div>
-        <div class="ptile-corner">04</div>
-        <div class="ptile-info"><div class="ptile-style">New Build · 8 hours</div><div class="ptile-name">Dust & Debris Cleared</div></div>
-      </div>
-      <div class="portfolio-tile" data-tile="5">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Airbnb</div>
-        <div class="ptile-corner">05</div>
-        <div class="ptile-info"><div class="ptile-style">Turnover · 2 hours</div><div class="ptile-name">5-Star Ready</div></div>
-      </div>
-      <div class="portfolio-tile" data-tile="6">
-        <div class="ptile-fallback">✦</div>
-        <div class="ptile-bg" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop')"></div>
-        <div class="ptile-badge">Recurring</div>
-        <div class="ptile-corner">06</div>
-        <div class="ptile-info"><div class="ptile-style">Whole Home · Bi-weekly</div><div class="ptile-name">Always Showroom Fresh</div></div>
-      </div>
-      <div class="portfolio-cta">
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Deep Clean</div><div class="gtile-info"><div class="gtile-style">Kitchen · 6 hours</div><div class="gtile-name">Top-to-Bottom Reset</div></div></div>
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Bathroom</div><div class="gtile-info"><div class="gtile-style">Master Bath · 3 hours</div><div class="gtile-name">Tile-to-Grout Sparkle</div></div></div>
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Move Out</div><div class="gtile-info"><div class="gtile-style">2BR Apt · 5 hours</div><div class="gtile-name">Security Deposit Back</div></div></div>
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Post-Construction</div><div class="gtile-info"><div class="gtile-style">New Build · 8 hours</div><div class="gtile-name">Dust & Debris Cleared</div></div></div>
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Airbnb</div><div class="gtile-info"><div class="gtile-style">Turnover · 2 hours</div><div class="gtile-name">5-Star Ready</div></div></div>
+      <div class="gtile"><div class="gtile-fallback">✦</div><div class="gtile-bg" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop')"></div><div class="gtile-badge">Recurring</div><div class="gtile-info"><div class="gtile-style">Whole Home · Bi-weekly</div><div class="gtile-name">Always Showroom Fresh</div></div></div>
+      <div class="gallery-cta">
         <h3>Want yours on <em>this list?</em></h3>
-        <p>Same-day and next-day spots are open. Tell us what you need cleaned and we'll send a free estimate within the hour.</p>
-        <a href="#booking" class="btn-sage magnetic"><span class="magnetic-inner">Get Your Free Estimate</span></a>
+        <p>Same-day and next-day spots open. Tell us what you need cleaned and we'll send a free estimate within the hour.</p>
+        <a href="#booking" class="btn-sage magnetic"><span class="magnetic-inner">Get Estimate</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="process-sticky-section" id="process">
-  <div class="process-pin">
-    <div class="process-rail">
-      <div class="pr-dot active" data-label="Call"></div>
-      <div class="pr-dot" data-label="Schedule"></div>
-      <div class="pr-dot" data-label="Clean"></div>
-      <div class="pr-dot" data-label="Guarantee"></div>
-    </div>
-    <div class="process-inner-new">
-      <div class="process-stage-new">
-        <div class="process-bignum active" data-bignum="0">01</div>
-        <div class="process-bignum" data-bignum="1">02</div>
-        <div class="process-bignum" data-bignum="2">03</div>
-        <div class="process-bignum" data-bignum="3">04</div>
-      </div>
-      <div class="process-content-new">
-        <div class="process-card active" data-card="0">
-          <div class="pc-eyebrow">How It Works</div>
-          <h3 class="pc-title">Call or<em>Text.</em></h3>
-          <p class="pc-desc">Reach out to <strong style="color:#fff">(314) 619-8742</strong> any time. Tell us what you need cleaned, how big the space is, and when works for you. We'll send a free estimate fast — no pressure, no upsells.</p>
-          <div class="pc-meta">
-            <div><div class="pcm-label">Response</div><div class="pcm-val">Within 1 hour</div></div>
-            <div><div class="pcm-label">Estimate</div><div class="pcm-val">Free · No obligation</div></div>
-          </div>
-        </div>
-        <div class="process-card" data-card="1">
-          <div class="pc-eyebrow">How It Works</div>
-          <h3 class="pc-title">We<em>Schedule.</em></h3>
-          <p class="pc-desc">Same-day and next-day openings are common. We'll lock in a window that works for you — early morning, mid-day, or after work. You'll get a confirmation text the day before.</p>
-          <div class="pc-meta">
-            <div><div class="pcm-label">Availability</div><div class="pcm-val">7 days/week</div></div>
-            <div><div class="pcm-label">Window</div><div class="pcm-val">2-hour arrival</div></div>
-          </div>
-        </div>
-        <div class="process-card" data-card="2">
-          <div class="pc-eyebrow">How It Works</div>
-          <h3 class="pc-title">We<em>Clean.</em></h3>
-          <p class="pc-desc">Our team arrives on time, fully insured, with everything we need. We work top-down, left-to-right — no corner skipped. You can leave during the clean or hang out, whatever's comfortable.</p>
-          <div class="pc-meta">
-            <div><div class="pcm-label">Insured</div><div class="pcm-val">$2M liability</div></div>
-            <div><div class="pcm-label">Supplies</div><div class="pcm-val">Included</div></div>
-          </div>
-        </div>
-        <div class="process-card" data-card="3">
-          <div class="pc-eyebrow">How It Works</div>
-          <h3 class="pc-title">You're<em>Happy.</em></h3>
-          <p class="pc-desc">100% satisfaction guaranteed. If anything's not perfect, we come back and fix it free — within 24 hours. We've held a perfect 5-star rating because we don't leave until you're thrilled.</p>
-          <div class="pc-meta">
-            <div><div class="pcm-label">Guarantee</div><div class="pcm-val">100% · 24-hr fix</div></div>
-            <div><div class="pcm-label">Rating</div><div class="pcm-val">5.0★ Google</div></div>
-          </div>
-        </div>
-      </div>
+<!-- PROCESS -->
+<div class="process-section">
+  <div class="process-inner">
+    <div class="eyebrow">How It Works</div>
+    <h2 class="title" data-split>Simple <em>Process</em></h2>
+    <div class="steps-grid">
+      <div class="step"><div class="step-num">01</div><div class="step-title">Call or Text</div><div class="step-desc">Reach out to (314) 619-8742. Tell us what you need and when. Free estimate, no pressure.</div></div>
+      <div class="step"><div class="step-num">02</div><div class="step-title">We Schedule</div><div class="step-desc">Same day or next day options available. We work around your schedule.</div></div>
+      <div class="step"><div class="step-num">03</div><div class="step-title">We Clean</div><div class="step-desc">Our team arrives on time and gives your space a thorough, professional clean.</div></div>
+      <div class="step"><div class="step-num">04</div><div class="step-title">You're Happy</div><div class="step-desc">100% satisfaction guaranteed. If you're not thrilled, we come back and fix it free.</div></div>
     </div>
   </div>
-</section>
+</div>
 
+<!-- REVIEWS -->
 <div class="reviews-section" id="reviews">
   <div class="reviews-inner">
     <div class="eyebrow">Reviews</div>
-    <h2 class="title">What Clients <em>Say</em></h2>
+    <h2 class="title" data-split>What Clients <em>Say</em></h2>
     <div class="rev-grid">
       <div class="rev"><div class="rev-stars">★★★★★</div><p class="rev-text">"Blessed Cleaning has been taking care of our house for over a year and we couldn't be happier! They're always on time and do an excellent job. They go the extra mile every time."</p><div class="rev-author">— Google Review</div></div>
       <div class="rev"><div class="rev-stars">★★★★★</div><p class="rev-text">"This mother-and-daughter duo is truly outstanding. Professional, reliable, and always show up when scheduled. They take their time and leave my home spotless from top to bottom."</p><div class="rev-author">— Google Review</div></div>
@@ -371,473 +438,273 @@ html.lenis,html.lenis body{height:auto}
   </div>
 </div>
 
+<!-- INFO -->
+<div class="info-section" id="info">
+  <div class="info-inner">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2 class="title" data-split>Get In <em>Touch</em></h2>
+      <div class="contact-cards">
+        <div class="ccard"><div><div class="ccard-label">Phone</div><div class="ccard-val">(314) 619-8742</div></div></div>
+        <div class="ccard"><div><div class="ccard-label">Service Area</div><div class="ccard-val">St. Charles, MO &amp; Surrounding</div></div></div>
+        <div class="ccard"><div><div class="ccard-label">Availability</div><div class="ccard-val">7 days · Same / next day</div></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">When We Work</div>
+      <h2 class="title" data-split>Always <em>Available</em></h2>
+      <div class="hours-list">
+        <div class="hr"><span class="hr-day">Mon – Sat</span><span class="hr-time">7:00 AM – 7:00 PM</span></div>
+        <div class="hr"><span class="hr-day">Sunday</span><span class="hr-time">8:00 AM – 5:00 PM</span></div>
+        <div class="hr"><span class="hr-day">Emergency</span><span class="hr-time">After-hours by request</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- BOOKING -->
 <div class="booking-section" id="booking">
   <div class="booking-inner">
-    <div class="booking-side">
+    <div>
       <div class="eyebrow">Request a Quote</div>
       <h2 class="title" data-split>Get Your Free <em>Estimate.</em></h2>
       <p>Fill out the form and we'll get back to you within the hour with a real quote — not a vague range. Prefer to talk? <a href="tel:3146198742">(314) 619-8742</a> rings straight through.</p>
-      <p style="font-size:.82rem;color:var(--sage);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:0">⚡ Same & next-day openings · 7 days a week</p>
+      <p style="font-size:.82rem;color:var(--sage);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:0">⚡ Same &amp; next-day openings · 7 days a week</p>
     </div>
     <div>
       <form id="bookingForm" name="quote" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="quote"/>
         <div style="display:none"><input name="bot-field"/></div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="bName">Name</label>
-            <input type="text" id="bName" name="name" required placeholder="Your full name"/>
-          </div>
-          <div class="form-group">
-            <label for="bPhone">Phone</label>
-            <input type="tel" id="bPhone" name="phone" required placeholder="(314) 000-0000"/>
-          </div>
+          <div class="form-group"><label for="bName">Name</label><input type="text" id="bName" name="name" required placeholder="Your full name"/></div>
+          <div class="form-group"><label for="bPhone">Phone</label><input type="tel" id="bPhone" name="phone" required placeholder="(314) 000-0000"/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="bService">Service Needed</label>
-            <select id="bService" name="service" required>
-              <option value="" disabled selected>Choose a service</option>
-              <option>Deep Cleaning</option>
-              <option>Basic / Recurring Cleaning</option>
-              <option>Post-Construction</option>
-              <option>Move In / Move Out</option>
-              <option>After-Party Cleanup</option>
-              <option>Airbnb / VRBO Turnover</option>
-              <option>Commercial / Office</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="bDate">Preferred Date</label>
-            <input type="date" id="bDate" name="date"/>
-          </div>
+          <div class="form-group"><label for="bService">Service Needed</label><select id="bService" name="service" required><option value="" disabled selected>Choose a service</option><option>Deep Cleaning</option><option>Basic / Recurring</option><option>Post-Construction</option><option>Move In / Out</option><option>After-Party Cleanup</option><option>Airbnb / VRBO Turnover</option><option>Commercial / Office</option></select></div>
+          <div class="form-group"><label for="bDate">Preferred Date</label><input type="date" id="bDate" name="date"/></div>
         </div>
         <div class="form-row">
-          <div class="form-group">
-            <label for="bSize">Home Size</label>
-            <select id="bSize" name="size">
-              <option value="" disabled selected>Approx. size</option>
-              <option>Studio / 1BR</option>
-              <option>2BR / 2BA</option>
-              <option>3BR / 2BA</option>
-              <option>4BR+</option>
-              <option>Commercial — Small</option>
-              <option>Commercial — Large</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="bZip">ZIP Code</label>
-            <input type="text" id="bZip" name="zip" placeholder="63301" pattern="[0-9]{5}"/>
-          </div>
+          <div class="form-group"><label for="bSize">Home Size</label><select id="bSize" name="size"><option value="" disabled selected>Approx. size</option><option>Studio / 1BR</option><option>2BR / 2BA</option><option>3BR / 2BA</option><option>4BR+</option><option>Commercial — Small</option><option>Commercial — Large</option></select></div>
+          <div class="form-group"><label for="bZip">ZIP Code</label><input type="text" id="bZip" name="zip" placeholder="63301" pattern="[0-9]{5}"/></div>
         </div>
-        <div class="form-group">
-          <label for="bNotes">Anything Else?</label>
-          <textarea id="bNotes" name="notes" rows="4" placeholder="Pets, problem areas, special requests, recurring schedule..."></textarea>
-        </div>
+        <div class="form-group"><label for="bNotes">Anything Else?</label><textarea id="bNotes" name="notes" rows="4" placeholder="Pets, problem areas, special requests..."></textarea></div>
         <button type="submit" class="btn-sage magnetic" style="width:100%;padding:16px;font-size:.85rem;letter-spacing:2px"><span class="magnetic-inner">Send Quote Request</span></button>
       </form>
-      <div id="bookingSuccess" class="booking-success" style="display:none">
-        <div class="eyebrow">Got It</div>
-        <h3 class="title" style="font-size:clamp(1.5rem,3vw,2.8rem)">We'll Be In <em>Touch.</em></h3>
-        <p style="font-size:.92rem;color:var(--gray);line-height:1.9;font-weight:300">Your request just landed. We'll text or call within the hour. Need it sooner? <a href="tel:3146198742" style="color:var(--sage);text-decoration:none;font-weight:600">(314) 619-8742</a></p>
-      </div>
     </div>
   </div>
 </div>
 
-<div class="cta-section" id="contact">
+<!-- CTA -->
+<div class="cta-section">
   <h2>Ready for a Spotless Home?</h2>
   <p>Call or text now for a free estimate. Same or next day service available. Fully insured, satisfaction guaranteed.</p>
   <a href="tel:3146198742" class="cta-phone">(314) 619-8742</a>
-  <a href="tel:3146198742" class="btn-white" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}">Get Your Free Quote</a>
+  <a href="tel:3146198742" class="btn-white magnetic" onclick="if(window.innerWidth>768){event.preventDefault();openBookModal()}"><span class="magnetic-inner">Get Your Free Quote</span></a>
 </div>
 
 <footer>
   <div class="fl">Blessed Cleaning · St. Charles, MO</div>
-  <div class="fc">© 2026 Blessed Cleaning · (314) 619-8742 · Insured · Residential & Commercial</div>
+  <div class="fc">© 2026 Blessed Cleaning · (314) 619-8742 · Insured · Residential &amp; Commercial</div>
 </footer>
-<script>
-const o=new IntersectionObserver(e=>{e.forEach(i=>{if(i.isIntersecting){i.target.style.opacity='1';i.target.style.transform='translateY(0)'}})},{threshold:0.1});
-document.querySelectorAll('.svc,.rev,.step,.stat,.trust-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(14px)';el.style.transition='opacity .5s ease,transform .5s ease';o.observe(el)});
-</script>
-<!-- (custom cursor removed — using native cursor) -->
-<!-- CDN Libraries -->
+
+<div class="modal-overlay" id="bookModal"><div class="modal-box"><button class="modal-close" onclick="closeModal()">&times;</button><h3>Blessed Cleaning</h3><p>Ready to book? Give us a call or find us on the map.</p><a href="tel:3146198742" class="modal-phone">(314) 619-8742</a><div class="modal-addr">St. Charles, MO 63301</div><div class="modal-btns"><a href="tel:3146198742" class="modal-btn-call">Call Now</a><a href="https://maps.google.com/?q=Blessed+Cleaning+St+Charles+MO" target="_blank" class="modal-btn-map">Get Directions</a></div></div></div>
+<script>function openBookModal(){document.getElementById('bookModal').classList.add('active')}function closeModal(){document.getElementById('bookModal').classList.remove('active')}document.getElementById('bookModal').addEventListener('click',function(e){if(e.target===this)closeModal()});</script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
 
-<!-- Scroll progress bar -->
+<script>(function(){var bar=document.getElementById('scrollBar');function upd(){var h=document.documentElement,m=h.scrollHeight-h.clientHeight;bar.style.width=(m>0?(window.scrollY/m)*100:0)+'%'}window.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd,{passive:true});upd()})();</script>
+
 <script>
-(function(){
-  var bar=document.getElementById('scrollBar');
-  if(!bar)return;
-  function upd(){
-    var h=document.documentElement;
-    var max=h.scrollHeight-h.clientHeight;
-    bar.style.width=(max>0?(window.scrollY/max)*100:0)+'%';
-  }
-  window.addEventListener('scroll',upd,{passive:true});
-  window.addEventListener('resize',upd,{passive:true});
-  upd();
-})();
+(function(){if(!window.Lenis||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var lenis=new Lenis({lerp:0.07,smoothWheel:true,smoothTouch:false,wheelMultiplier:0.85,touchMultiplier:1.5});
+window.__lenis=lenis;
+if(window.gsap&&window.ScrollTrigger){gsap.registerPlugin(ScrollTrigger);lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0)}else{function r(t){lenis.raf(t);requestAnimationFrame(r)}requestAnimationFrame(r)}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length<2)return;var t=document.querySelector(id);if(!t)return;e.preventDefault();lenis.scrollTo(t,{offset:-60,duration:1.2})})})})();
 </script>
 
-<!-- Lenis smooth scroll + GSAP sync -->
+<!-- SCROLLYTELLING: dusty surface → bubbles cascade → clean reveal -->
 <script>
 (function(){
-  if(!window.Lenis||window.matchMedia('(prefers-reduced-motion:reduce)').matches)return;
-  var lenis=new Lenis({lerp:0.1,smoothWheel:true,smoothTouch:false,wheelMultiplier:1});
-  window.__lenis=lenis;
-  if(window.gsap&&window.ScrollTrigger){
-    gsap.registerPlugin(ScrollTrigger);
-    lenis.on('scroll',ScrollTrigger.update);
-    gsap.ticker.add(function(time){lenis.raf(time*1000)});
-    gsap.ticker.lagSmoothing(0);
-  }else{
-    function raf(time){lenis.raf(time);requestAnimationFrame(raf)}
-    requestAnimationFrame(raf);
-  }
-  document.querySelectorAll('a[href^="#"]').forEach(function(a){
-    a.addEventListener('click',function(e){
-      var id=a.getAttribute('href');
-      if(id.length<2)return;
-      var t=document.querySelector(id);
-      if(!t)return;
-      e.preventDefault();
-      lenis.scrollTo(t,{offset:-60,duration:1.0});
-    });
-  });
-})();
-</script>
+  if(!window.THREE||!window.gsap||!window.ScrollTrigger)return;
+  var canvas=document.getElementById('storyCanvas');
+  if(!canvas||window.innerWidth<=900)return;
 
-<!-- Three.js hero: light & airy (sage sphere + sparkle particles) -->
-<script>
-(function(){
-  if(!window.THREE||window.innerWidth<=900)return;
-  var canvas=document.getElementById('heroCanvas');
-  if(!canvas)return;
   var W=canvas.offsetWidth,H=canvas.offsetHeight;
-  var renderer=new THREE.WebGLRenderer({canvas:canvas,alpha:true,antialias:true});
+  var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio,1.5));
   renderer.setSize(W,H);
+  renderer.setClearColor(0x1A2B27,1);
+  renderer.shadowMap.enabled=true;
+  renderer.shadowMap.type=THREE.PCFSoftShadowMap;
   var scene=new THREE.Scene();
-  var camera=new THREE.PerspectiveCamera(55,W/H,0.1,1000);
-  camera.position.z=80;
+  scene.fog=new THREE.Fog(0x1A2B27,20,80);
+  var camera=new THREE.PerspectiveCamera(50,W/H,0.1,200);
+  camera.position.set(0,3,18);
 
-  // Pause render when hero is offscreen (saves GPU on the rest of the page)
-  var heroVisible=true;
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(entries){
-      heroVisible=entries[0].isIntersecting;
-    },{threshold:0.01}).observe(canvas);
-  }
+  // LIGHTING — soft daylight (cleaning = bright/airy mood as you progress)
+  var keyLight=new THREE.DirectionalLight(0xFFFBF0,1.1);
+  keyLight.position.set(8,15,8);
+  keyLight.castShadow=true;
+  keyLight.shadow.mapSize.width=1024;keyLight.shadow.mapSize.height=1024;
+  keyLight.shadow.camera.left=-15;keyLight.shadow.camera.right=15;
+  keyLight.shadow.camera.top=15;keyLight.shadow.camera.bottom=-15;
+  keyLight.shadow.bias=-0.0008;
+  scene.add(keyLight);
+  scene.add(new THREE.AmbientLight(0xA0BFB5,0.55));
+  scene.add(new THREE.DirectionalLight(0xD4EAE5,0.4)).position.set(-10,5,10);
 
-  // Sparkle particles — light, airy, drifts upward
-  var COUNT=120;
-  var pos=new Float32Array(COUNT*3);
-  var vel=[];
-  for(var i=0;i<COUNT;i++){
-    pos[i*3]=(Math.random()-.5)*180;
-    pos[i*3+1]=(Math.random()-.5)*120;
-    pos[i*3+2]=(Math.random()-.5)*60;
-    vel.push({x:(Math.random()-.5)*.03,y:.018+Math.random()*.025,z:(Math.random()-.5)*.015});
-  }
-  var pgeo=new THREE.BufferGeometry();
-  pgeo.setAttribute('position',new THREE.BufferAttribute(pos,3));
-  var pmat=new THREE.PointsMaterial({color:0x4A7C6F,size:1.3,transparent:true,opacity:0.4,sizeAttenuation:true});
-  scene.add(new THREE.Points(pgeo,pmat));
-
-  // Floating soap bubbles — varied sizes, gentle drift, very on-brand for cleaning
-  var BUBBLES=[];
-  var BUBBLE_COLORS=[0x6FA99A,0xD4EAE5,0x4A7C6F,0xB3DAD2,0xFFFFFF];
-  for(var b=0;b<14;b++){
-    var radius=1.8+Math.random()*5.5;
-    var bGeo=new THREE.SphereGeometry(radius,16,12);
-    var bMat=new THREE.MeshBasicMaterial({
-      color:BUBBLE_COLORS[b%BUBBLE_COLORS.length],
-      wireframe:true,
-      transparent:true,
-      opacity:0.18+Math.random()*0.22
-    });
-    var bubble=new THREE.Mesh(bGeo,bMat);
-    bubble.position.set((Math.random()-.5)*70,(Math.random()-.5)*50,(Math.random()-.5)*30);
-    bubble.userData={
-      vx:(Math.random()-.5)*.04,
-      vy:.02+Math.random()*.035,
-      vz:(Math.random()-.5)*.02,
-      rotSpeed:0.001+Math.random()*0.003,
-      bobAmp:0.3+Math.random()*0.7,
-      bobPhase:Math.random()*Math.PI*2
-    };
-    BUBBLES.push(bubble);
-    scene.add(bubble);
-  }
-
-  var tCamX=0,tCamY=0,cCamX=0,cCamY=0;
-  var tRotX=0,tRotY=0,cRotX=0,cRotY=0;
-  var scrollY=0;
-  document.addEventListener('mousemove',function(e){
-    var hero=document.querySelector('.hero');
-    if(!hero)return;
-    var rect=hero.getBoundingClientRect();
-    if(e.clientY>rect.bottom)return;
-    var nx=(e.clientX/window.innerWidth)-.5;
-    var ny=(e.clientY/window.innerHeight)-.5;
-    tCamX=nx*7;tCamY=-ny*5;
-    tRotX=ny*.5;tRotY=nx*.6;
+  // SURFACE — a tilted plane that goes from "dirty" to "clean" via shader
+  var surfMat=new THREE.ShaderMaterial({
+    uniforms:{uTime:{value:0},uClean:{value:0}},
+    vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
+    fragmentShader:`
+      uniform float uTime;uniform float uClean;varying vec2 vUv;
+      vec2 hash22(vec2 p){p=vec2(dot(p,vec2(127.1,311.7)),dot(p,vec2(269.5,183.3)));return -1.0+2.0*fract(sin(p)*43758.5453);}
+      float noise(vec2 p){vec2 i=floor(p);vec2 f=fract(p);vec2 u=f*f*(3.0-2.0*f);return mix(mix(dot(hash22(i),f),dot(hash22(i+vec2(1,0)),f-vec2(1,0)),u.x),mix(dot(hash22(i+vec2(0,1)),f-vec2(0,1)),dot(hash22(i+vec2(1,1)),f-vec2(1,1)),u.x),u.y);}
+      void main(){
+        // Dusty pattern (FBM noise)
+        float dust=noise(vUv*8.0)*0.5+noise(vUv*16.0)*0.25+noise(vUv*32.0)*0.125;
+        dust=dust*0.5+0.5;
+        // Cleanliness: as uClean grows, dust fades from visible to hidden
+        float dirty=(1.0-uClean)*dust;
+        // Base wood/floor color, dirty version is darker/grayer
+        vec3 cleanColor=vec3(0.92,0.96,0.94);
+        vec3 dirtyColor=vec3(0.22,0.27,0.25);
+        vec3 col=mix(cleanColor,dirtyColor,dirty*0.85);
+        // Sparkle highlights on clean surface (bright spots)
+        if(uClean>0.5){
+          float spark=smoothstep(0.93,1.0,noise(vUv*45.0+uTime*0.2));
+          col+=vec3(1.0,1.0,0.95)*spark*(uClean-0.5)*0.8;
+        }
+        gl_FragColor=vec4(col,1.0);
+      }
+    `,
+    side:THREE.DoubleSide
   });
-  window.addEventListener('scroll',function(){scrollY=window.scrollY||0},{passive:true});
-  window.addEventListener('resize',function(){
-    if(window.innerWidth<=900)return;
-    W=canvas.offsetWidth;H=canvas.offsetHeight;
-    renderer.setSize(W,H);
-    camera.aspect=W/H;camera.updateProjectionMatrix();
-  },{passive:true});
+  var surface=new THREE.Mesh(new THREE.PlaneGeometry(40,40,32,32),surfMat);
+  surface.rotation.x=-Math.PI/2.2;
+  surface.position.y=-2;
+  surface.receiveShadow=true;
+  scene.add(surface);
 
-  (function animate(t){
-    requestAnimationFrame(animate);
-    if(!heroVisible)return;
-    var p=pgeo.attributes.position.array;
-    for(var i=0;i<COUNT;i++){
-      p[i*3]+=vel[i].x;p[i*3+1]+=vel[i].y;p[i*3+2]+=vel[i].z;
-      if(p[i*3+1]>62)p[i*3+1]=-62;
-      if(p[i*3]>92)p[i*3]=-92;
-      if(p[i*3]<-92)p[i*3]=92;
+  // BUBBLES — translucent spheres falling/floating, PBR refraction-ish
+  var BUBBLES=24;
+  var bubbles=[];
+  var bubbleMat=new THREE.MeshStandardMaterial({color:0xC8E4DD,roughness:0.2,metalness:0.05,transparent:true,opacity:0.55});
+  for(var i=0;i<BUBBLES;i++){
+    var r=0.3+Math.random()*0.5;
+    var b=new THREE.Mesh(new THREE.SphereGeometry(r,16,12),bubbleMat);
+    b.position.set((Math.random()-.5)*25,8+Math.random()*15,(Math.random()-.5)*12);
+    b.userData={vy:0.06+Math.random()*0.08,reset:18+Math.random()*8,oscill:Math.random()*Math.PI*2};
+    b.castShadow=true;
+    bubbles.push(b);
+    scene.add(b);
+  }
+
+  // BUBBLE OPACITY tied to scroll progress (bubbles fade in mid-story, out by end)
+  function bubbleVisibility(scrollProg){
+    if(scrollProg<0.15) return 0;
+    if(scrollProg<0.5) return (scrollProg-0.15)/0.35;
+    if(scrollProg<0.85) return 1;
+    return 1-(scrollProg-0.85)/0.15;
+  }
+
+  // STATE
+  var state={
+    camX:0,camY:3,camZ:18,lookX:0,lookY:0,lookZ:0,
+    cleanProgress:0,scrollProg:0,
+    bgR:0.102,bgG:0.169,bgB:0.153
+  };
+  var _bg=new THREE.Color();
+
+  var tl=gsap.timeline({
+    defaults:{ease:'power3.inOut'},
+    scrollTrigger:{
+      trigger:'.story',start:'top top',end:'bottom bottom',
+      scrub:1.2,pin:'.story-pin',anticipatePin:1,fastScrollEnd:true,
+      onUpdate:function(self){
+        state.scrollProg=self.progress;
+        var idx=Math.min(5,Math.floor(self.progress*6));
+        document.querySelectorAll('.beat').forEach(function(b,i){b.classList.toggle('in',i===idx)});
+        document.querySelectorAll('.brail-dot').forEach(function(d,i){d.classList.toggle('active',i===idx)});
+      }
     }
-    pgeo.attributes.position.needsUpdate=true;
+  });
 
-    var s=scrollY*0.0015;
-    cRotX+=(tRotX-cRotX)*.05;
-    cRotY+=(tRotY-cRotY)*.05;
-    var nowT=(t||0)*0.001;
-    BUBBLES.forEach(function(b){
-      var d=b.userData;
-      b.position.x+=d.vx;
-      b.position.y+=d.vy+Math.sin(nowT+d.bobPhase)*0.012*d.bobAmp;
-      b.position.z+=d.vz;
-      // Wrap around vertically — bubbles rise then reset
-      if(b.position.y>32){b.position.y=-32;b.position.x=(Math.random()-.5)*70}
-      if(b.position.x>42)b.position.x=-42;
-      if(b.position.x<-42)b.position.x=42;
-      b.rotation.x+=d.rotSpeed;
-      b.rotation.y+=d.rotSpeed*0.7;
+  tl.to(state,{camX:-4,camY:5,camZ:20,lookX:-1,lookY:0,duration:1.3},0)
+    .to(state,{camX:4,camY:2,camZ:14,lookX:2,lookY:0,duration:1.4},'>-0.2')
+    .to(state,{cleanProgress:0.5,duration:1.4,ease:'sine.out'},'<+0.3')
+    .to(state,{camX:0,camY:8,camZ:12,lookX:0,lookY:-1,duration:1.5},'>-0.2')
+    .to(state,{cleanProgress:1,duration:1.5,ease:'sine.out'},'<')
+    .to(state,{camX:5,camY:3,camZ:16,lookX:0,lookY:0,duration:1.6},'>-0.2')
+    .to(state,{bgR:0.831,bgG:0.918,bgB:0.898,duration:1.6,ease:'sine.inOut'},'<')
+    .to(state,{camX:0,camY:5,camZ:22,lookX:0,lookY:1,duration:1.5},'>-0.3');
+
+  var clock=new THREE.Clock();
+  var heroVisible=true;
+  if('IntersectionObserver' in window){new IntersectionObserver(function(e){heroVisible=e[0].isIntersecting},{threshold:0.01}).observe(canvas)}
+  window.addEventListener('resize',function(){if(window.innerWidth<=900)return;W=canvas.offsetWidth;H=canvas.offsetHeight;renderer.setSize(W,H);camera.aspect=W/H;camera.updateProjectionMatrix()},{passive:true});
+
+  function render(){
+    requestAnimationFrame(render);
+    if(!heroVisible)return;
+    var t=clock.getElapsedTime();
+    surfMat.uniforms.uTime.value=t;
+    surfMat.uniforms.uClean.value=state.cleanProgress;
+    var bopacity=bubbleVisibility(state.scrollProg);
+    bubbles.forEach(function(b){
+      b.material.opacity=0.55*bopacity;
+      b.position.y-=b.userData.vy*bopacity;
+      b.position.x+=Math.sin(t+b.userData.oscill)*0.008;
+      if(b.position.y<-3){b.position.y=b.userData.reset;b.position.x=(Math.random()-.5)*25}
     });
-
-    cCamX+=(tCamX-cCamX)*.05;
-    cCamY+=(tCamY-cCamY)*.05;
-    camera.position.x=cCamX;
-    camera.position.y=cCamY-s*6;
-    camera.position.z=80+Math.min(s*25,50);
-    camera.lookAt(0,0,0);
+    camera.position.set(state.camX,state.camY,state.camZ);
+    camera.lookAt(state.lookX,state.lookY,state.lookZ);
+    _bg.setRGB(state.bgR,state.bgG,state.bgB);
+    renderer.setClearColor(_bg,1);
+    scene.fog.color.copy(_bg);
     renderer.render(scene,camera);
-  })();
+  }
+  render();
+
+  document.querySelectorAll('.brail-dot').forEach(function(d){
+    d.addEventListener('click',function(){var beat=parseInt(d.dataset.beat,10);var story=document.querySelector('.story');var rect=story.getBoundingClientRect();var pageTop=window.scrollY+rect.top;var sectionH=story.offsetHeight-window.innerHeight;var targetY=pageTop+sectionH*(beat/5.5);if(window.__lenis){window.__lenis.scrollTo(targetY,{duration:1.2})}else{window.scrollTo({top:targetY,behavior:'smooth'})}});
+  });
 })();
 </script>
 
-<!-- Portfolio horizontal pinned scroll -->
+<!-- Gallery: horizontal pinned -->
 <script>
 (function(){
   if(window.innerWidth<=900||!window.gsap||!window.ScrollTrigger)return;
-  var track=document.getElementById('portfolioTrack');
-  var section=document.querySelector('.portfolio-section');
+  var track=document.getElementById('galleryTrack');var section=document.querySelector('.gallery-section');
   if(!track||!section)return;
   function calc(){return track.scrollWidth-window.innerWidth+48}
   function sizeSection(){section.style.height=(calc()+window.innerHeight)+'px'}
-  sizeSection();
-  window.addEventListener('resize',sizeSection,{passive:true});
-  gsap.to(track,{
-    x:function(){return -calc()},
-    ease:'none',
-    scrollTrigger:{
-      trigger:section,
-      start:'top top',
-      end:function(){return '+='+calc()},
-      scrub:0.4,
-      pin:'.portfolio-pin',
-      anticipatePin:1,
-      fastScrollEnd:true,
-      invalidateOnRefresh:true
-    }
-  });
-  var counter=document.getElementById('ptileCount');
-  var tiles=document.querySelectorAll('.portfolio-tile');
-  if(counter&&tiles.length){
-    ScrollTrigger.create({
-      trigger:section,start:'top top',end:function(){return '+='+calc()},
-      onUpdate:function(self){
-        var idx=Math.min(tiles.length,Math.max(1,Math.ceil(self.progress*tiles.length)));
-        counter.textContent=(idx<10?'0':'')+idx;
-      }
-    });
-  }
-  window.addEventListener('resize',function(){ScrollTrigger.refresh()},{passive:true});
-  document.querySelectorAll('.ptile-bg').forEach(function(bg){
-    var url=(bg.style.backgroundImage||'').replace(/^url\(["']?/,'').replace(/["']?\)$/,'');
-    if(!url)return;
-    var img=new Image();
-    img.onerror=function(){
-      bg.style.display='none';
-      var fb=bg.parentNode.querySelector('.ptile-fallback');
-      if(fb)fb.style.display='flex';
-    };
-    img.src=url;
-  });
+  sizeSection();window.addEventListener('resize',sizeSection,{passive:true});
+  gsap.to(track,{x:function(){return -calc()},ease:'none',scrollTrigger:{trigger:section,start:'top top',end:function(){return '+='+calc()},scrub:0.4,pin:'.gallery-pin',anticipatePin:1,fastScrollEnd:true,invalidateOnRefresh:true}});
+  var counter=document.getElementById('gcount');var tiles=document.querySelectorAll('.gtile');
+  if(counter&&tiles.length){ScrollTrigger.create({trigger:section,start:'top top',end:function(){return '+='+calc()},onUpdate:function(self){var idx=Math.min(tiles.length,Math.max(1,Math.ceil(self.progress*tiles.length)));counter.textContent=(idx<10?'0':'')+idx}});}
+  document.querySelectorAll('.gtile-bg').forEach(function(bg){var url=(bg.style.backgroundImage||'').replace(/^url\(["']?/,'').replace(/["']?\)$/,'');if(!url)return;var img=new Image();img.onerror=function(){bg.style.display='none';var fb=bg.parentNode.querySelector('.gtile-fallback');if(fb)fb.style.display='flex'};img.src=url});
 })();
 </script>
 
-<!-- Process sticky step swap -->
+<!-- Split text + magnetic + form -->
 <script>
 (function(){
   if(!window.gsap||!window.ScrollTrigger)return;
-  var section=document.querySelector('.process-sticky-section');
-  if(!section)return;
-  var cards=document.querySelectorAll('.process-card');
-  var nums=document.querySelectorAll('.process-bignum');
-  var dots=document.querySelectorAll('.pr-dot');
-  var total=cards.length;
-  if(!total)return;
-  if(window.innerWidth<=900){cards.forEach(function(c){c.classList.add('active')});return}
-  function setActive(idx){
-    cards.forEach(function(c,i){
-      c.classList.remove('active','exit');
-      if(i===idx)c.classList.add('active');
-      else if(i<idx)c.classList.add('exit');
-    });
-    nums.forEach(function(n,i){
-      n.classList.remove('active','exit');
-      if(i===idx)n.classList.add('active');
-      else if(i<idx)n.classList.add('exit');
-    });
-    dots.forEach(function(d,i){d.classList.toggle('active',i<=idx)});
-  }
-  ScrollTrigger.create({
-    trigger:section,start:'top top',end:'bottom bottom',
-    pin:'.process-pin',anticipatePin:1,
-    onUpdate:function(self){
-      var idx=Math.min(total-1,Math.floor(self.progress*total));
-      setActive(idx);
-    }
-  });
+  function split(el){if(el.dataset.splitDone)return;el.dataset.splitDone='1';function proc(n){if(n.nodeType===3){var f=document.createDocumentFragment();n.textContent.split(/(\s+)/).forEach(function(w){if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w));return}var ws=document.createElement('span');ws.style.display='inline-block';ws.style.whiteSpace='nowrap';for(var i=0;i<w.length;i++){var s=document.createElement('span');s.style.display='inline-block';s.style.transform='translateY(110%)';s.style.opacity='0';s.style.transition='transform .9s cubic-bezier(.22,1,.36,1),opacity .8s ease';s.textContent=w[i];ws.appendChild(s)}f.appendChild(ws)});n.parentNode.replaceChild(f,n)}else if(n.nodeType===1){Array.from(n.childNodes).forEach(proc)}}Array.from(el.childNodes).forEach(proc);var chars=el.querySelectorAll('span > span');ScrollTrigger.create({trigger:el,start:'top 88%',once:true,onEnter:function(){chars.forEach(function(c,i){setTimeout(function(){c.style.transform='translateY(0)';c.style.opacity='1'},i*15)})}})}
+  document.querySelectorAll('[data-split]').forEach(split);
+  gsap.utils.toArray('.svc').forEach(function(c){gsap.fromTo(c,{y:24,opacity:0},{y:0,opacity:1,duration:.8,ease:'power3.out',scrollTrigger:{trigger:c,start:'top 90%',once:true}})});
+  gsap.utils.toArray('.rev').forEach(function(c,i){gsap.fromTo(c,{y:24,opacity:0},{y:0,opacity:1,duration:.7,delay:i*0.1,ease:'power2.out',scrollTrigger:{trigger:'.rev-grid',start:'top 80%',once:true}})});
+  gsap.utils.toArray('.step').forEach(function(c,i){gsap.fromTo(c,{y:24,opacity:0},{y:0,opacity:1,duration:.7,delay:i*0.1,ease:'power2.out',scrollTrigger:{trigger:'.steps-grid',start:'top 80%',once:true}})});
 })();
+(function(){if(window.matchMedia('(pointer:coarse)').matches)return;function bind(el){var inner=el.querySelector('.magnetic-inner');if(!inner){var s=document.createElement('span');s.className='magnetic-inner';while(el.firstChild)s.appendChild(el.firstChild);el.appendChild(s);inner=s}var raf=0,tx=0,ty=0;function apply(){raf=0;el.style.transform='translate('+(tx*.3)+'px,'+(ty*.3)+'px)';inner.style.transform='translate('+(tx*.5)+'px,'+(ty*.5)+'px)'}el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();tx=e.clientX-r.left-r.width/2;ty=e.clientY-r.top-r.height/2;if(!raf)raf=requestAnimationFrame(apply)});el.addEventListener('mouseleave',function(){if(raf){cancelAnimationFrame(raf);raf=0}el.style.transform='';inner.style.transform=''})}document.querySelectorAll('.magnetic').forEach(bind)})();
+(function(){var form=document.getElementById('bookingForm');if(!form)return;form.addEventListener('submit',async function(e){e.preventDefault();var btn=form.querySelector('button[type=submit]');var inner=btn.querySelector('.magnetic-inner')||btn;var orig=inner.textContent;inner.textContent='Sending...';btn.disabled=true;try{await fetch('/',{method:'POST',body:new FormData(form)});alert('Got it! We\\'ll call within the hour.')}catch(err){inner.textContent=orig;btn.disabled=false;alert('Something went wrong. Call (314) 619-8742.')}})})();
 </script>
 
-<!-- Character split text reveal -->
-<script>
-(function(){
-  if(!window.gsap||!window.ScrollTrigger)return;
-  function splitEl(el){
-    if(el.dataset.splitDone)return;
-    el.dataset.splitDone='1';
-    function processNode(node){
-      if(node.nodeType===3){
-        var frag=document.createDocumentFragment();
-        var words=node.textContent.split(/(\s+)/);
-        words.forEach(function(word){
-          if(/^\s+$/.test(word)){frag.appendChild(document.createTextNode(word));return}
-          var w=document.createElement('span');w.className='split-word';
-          for(var i=0;i<word.length;i++){
-            var s=document.createElement('span');s.className='split-char';s.textContent=word[i];w.appendChild(s);
-          }
-          frag.appendChild(w);
-        });
-        node.parentNode.replaceChild(frag,node);
-      }else if(node.nodeType===1){
-        Array.from(node.childNodes).forEach(processNode);
-      }
-    }
-    Array.from(el.childNodes).forEach(processNode);
-    var chars=el.querySelectorAll('.split-char');
-    ScrollTrigger.create({
-      trigger:el,start:'top 88%',once:true,
-      onEnter:function(){chars.forEach(function(c,i){setTimeout(function(){c.classList.add('in')},i*16)})}
-    });
-  }
-  // Auto-tag all .title elements
-  document.querySelectorAll('.title').forEach(function(t){if(!t.hasAttribute('data-split'))t.setAttribute('data-split','')});
-  document.querySelectorAll('[data-split]').forEach(splitEl);
-  ScrollTrigger.refresh();
-})();
-</script>
-
-<!-- Magnetic buttons -->
-<script>
-(function(){
-  if(window.matchMedia('(pointer:coarse)').matches)return;
-  function bind(el){
-    var inner=el.querySelector('.magnetic-inner');
-    if(!inner){
-      var span=document.createElement('span');span.className='magnetic-inner';
-      while(el.firstChild)span.appendChild(el.firstChild);
-      el.appendChild(span);
-      inner=span;
-    }
-    var rafId=0,tx=0,ty=0;
-    function apply(){
-      rafId=0;
-      el.style.transform='translate('+(tx*.3)+'px,'+(ty*.3)+'px)';
-      inner.style.transform='translate('+(tx*.5)+'px,'+(ty*.5)+'px)';
-    }
-    el.addEventListener('mousemove',function(e){
-      var r=el.getBoundingClientRect();
-      tx=e.clientX-r.left-r.width/2;
-      ty=e.clientY-r.top-r.height/2;
-      if(!rafId)rafId=requestAnimationFrame(apply);
-    });
-    el.addEventListener('mouseleave',function(){
-      if(rafId){cancelAnimationFrame(rafId);rafId=0}
-      el.style.transform='';inner.style.transform='';
-    });
-  }
-  document.querySelectorAll('.magnetic').forEach(bind);
-  document.querySelectorAll('.btn-sage:not(.magnetic),.btn-white,.cta-phone').forEach(function(b){
-    b.classList.add('magnetic');bind(b);
-  });
-})();
-</script>
-
-<!-- Service card scroll-in 3D entrance -->
-<script>
-(function(){
-  if(!window.gsap||!window.ScrollTrigger||window.innerWidth<=900)return;
-  gsap.utils.toArray('.svc').forEach(function(card){
-    gsap.fromTo(card,{rotateY:-6,rotateX:3,z:-30,opacity:0},{
-      rotateY:0,rotateX:0,z:0,opacity:1,duration:1.0,ease:'power3.out',
-      scrollTrigger:{trigger:card,start:'top 90%',once:true}
-    });
-  });
-  gsap.from('.trust-item',{x:30,opacity:0,duration:0.7,stagger:0.12,ease:'power2.out',scrollTrigger:{trigger:'.hero-right',start:'top 85%',once:true}});
-  gsap.from('.stat',{y:20,opacity:0,duration:0.6,stagger:0.1,ease:'power2.out',scrollTrigger:{trigger:'.stats-row',start:'top 85%',once:true}});
-  gsap.from('.rev',{y:24,opacity:0,duration:0.6,stagger:0.12,ease:'power2.out',scrollTrigger:{trigger:'.rev-grid',start:'top 80%',once:true}});
-  gsap.from('#booking .form-group',{y:18,opacity:0,duration:0.5,stagger:0.06,ease:'power2.out',scrollTrigger:{trigger:'.booking-section',start:'top 80%',once:true}});
-  gsap.from('.cta-section h2',{y:28,opacity:0,duration:0.8,ease:'power3.out',scrollTrigger:{trigger:'.cta-section',start:'top 80%',once:true}});
-})();
-</script>
-
-<!-- Booking form (Netlify) -->
-<script>
-(function(){
-  var form=document.getElementById('bookingForm');
-  var success=document.getElementById('bookingSuccess');
-  if(!form)return;
-  form.addEventListener('submit',async function(e){
-    e.preventDefault();
-    var btn=form.querySelector('button[type=submit]');
-    var inner=btn.querySelector('.magnetic-inner')||btn;
-    var orig=inner.textContent;
-    inner.textContent='Sending...';btn.disabled=true;
-    try{
-      await fetch('/',{method:'POST',body:new FormData(form)});
-      form.style.display='none';
-      success.style.display='block';
-    }catch(err){
-      inner.textContent=orig;btn.disabled=false;
-      alert('Something went wrong. Please call us at (314) 619-8742.');
-    }
-  });
-})();
-</script>
-
-<div class="modal-overlay" id="bookModal"><div class="modal-box"><button class="modal-close" onclick="closeModal()">&times;</button><h3>Blessed Cleaning</h3><p>Ready to book? Give us a call or find us on the map.</p><a href="tel:3146198742" class="modal-phone">(314) 619-8742</a><div class="modal-addr">St. Charles, MO 63301</div><div class="modal-btns"><a href="tel:3146198742" class="modal-btn-call">Call Now</a><a href="https://maps.google.com/?q=Blessed+Cleaning+St+Charles+MO" target="_blank" class="modal-btn-map">Get Directions</a></div></div></div><script>function openBookModal(){document.getElementById('bookModal').classList.add('active')}function closeModal(){document.getElementById('bookModal').classList.remove('active')}document.getElementById('bookModal').addEventListener('click',function(e){if(e.target===this)closeModal()});</script>
 </body>
 </html>
