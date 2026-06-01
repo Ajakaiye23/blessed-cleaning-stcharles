@@ -544,6 +544,19 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
   var camera=new THREE.PerspectiveCamera(50,W/H,0.1,200);
   camera.position.set(0,3,18);
 
+  // Bright airy env map so soap bubbles reflect + show iridescent thin-film sheen
+  (function(){
+    var c=document.createElement('canvas');c.width=32;c.height=256;var g=c.getContext('2d');
+    var gr=g.createLinearGradient(0,0,0,256);
+    gr.addColorStop(0,'#ffffff');gr.addColorStop(0.4,'#cfe8e2');gr.addColorStop(0.5,'#ffffff');
+    gr.addColorStop(0.62,'#bcd9d2');gr.addColorStop(0.85,'#8fb6ad');gr.addColorStop(1,'#5f7d76');
+    g.fillStyle=gr;g.fillRect(0,0,32,256);
+    g.fillStyle='rgba(255,255,255,0.95)';g.fillRect(0,70,32,20);
+    var tex=new THREE.CanvasTexture(c);tex.mapping=THREE.EquirectangularReflectionMapping;
+    var pm=new THREE.PMREMGenerator(renderer);pm.compileEquirectangularShader();
+    scene.environment=pm.fromEquirectangular(tex).texture;tex.dispose();pm.dispose();
+  })();
+
   // LIGHTING — soft daylight (cleaning = bright/airy mood as you progress)
   var keyLight=new THREE.DirectionalLight(0xFFFBF0,1.1);
   keyLight.position.set(8,15,8);
@@ -593,11 +606,12 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
   // BUBBLES — translucent spheres falling/floating, PBR refraction-ish
   var BUBBLES=24;
   var bubbles=[];
-  var bubbleMat=new THREE.MeshStandardMaterial({color:0xC8E4DD,roughness:0.2,metalness:0.05,transparent:true,opacity:0.55});
+  var bubbleMat=new THREE.MeshPhysicalMaterial({color:0xEAF6F2,roughness:0.05,metalness:0,transparent:true,opacity:0.42,clearcoat:1,clearcoatRoughness:0.04,envMapIntensity:2.6,side:THREE.DoubleSide});
+  if('iridescence' in bubbleMat){bubbleMat.iridescence=1;bubbleMat.iridescenceIOR=1.3;bubbleMat.iridescenceThicknessRange=[120,500];}
   for(var i=0;i<BUBBLES;i++){
     var r=0.3+Math.random()*0.5;
-    var b=new THREE.Mesh(new THREE.SphereGeometry(r,16,12),bubbleMat);
-    b.position.set((Math.random()-.5)*25,8+Math.random()*15,(Math.random()-.5)*12);
+    var b=new THREE.Mesh(new THREE.SphereGeometry(r,32,24),bubbleMat);
+    b.position.set((Math.random()-.5)*25,-3+Math.random()*18,(Math.random()-.5)*12);
     b.userData={vy:0.06+Math.random()*0.08,reset:18+Math.random()*8,oscill:Math.random()*Math.PI*2};
     b.castShadow=true;
     bubbles.push(b);
@@ -606,10 +620,9 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
 
   // BUBBLE OPACITY tied to scroll progress (bubbles fade in mid-story, out by end)
   function bubbleVisibility(scrollProg){
-    if(scrollProg<0.15) return 0;
-    if(scrollProg<0.5) return (scrollProg-0.15)/0.35;
+    if(scrollProg<0.5) return 0.7+scrollProg*0.6;   // visible from the hero (0.7 -> 1.0)
     if(scrollProg<0.85) return 1;
-    return 1-(scrollProg-0.85)/0.15;
+    return 1-(scrollProg-0.85)/0.15*0.5;            // ease down, never fully gone
   }
 
   // STATE
@@ -656,7 +669,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
     surfMat.uniforms.uClean.value=state.cleanProgress;
     var bopacity=bubbleVisibility(state.scrollProg);
     bubbles.forEach(function(b){
-      b.material.opacity=0.55*bopacity;
+      b.material.opacity=0.6*Math.min(1,bopacity);
       b.position.y-=b.userData.vy*bopacity;
       b.position.x+=Math.sin(t+b.userData.oscill)*0.008;
       if(b.position.y<-3){b.position.y=b.userData.reset;b.position.x=(Math.random()-.5)*25}
@@ -703,7 +716,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener
   gsap.utils.toArray('.step').forEach(function(c,i){gsap.fromTo(c,{y:24,opacity:0},{y:0,opacity:1,duration:.7,delay:i*0.1,ease:'power2.out',scrollTrigger:{trigger:'.steps-grid',start:'top 80%',once:true}})});
 })();
 (function(){if(window.matchMedia('(pointer:coarse)').matches)return;function bind(el){var inner=el.querySelector('.magnetic-inner');if(!inner){var s=document.createElement('span');s.className='magnetic-inner';while(el.firstChild)s.appendChild(el.firstChild);el.appendChild(s);inner=s}var raf=0,tx=0,ty=0;function apply(){raf=0;el.style.transform='translate('+(tx*.3)+'px,'+(ty*.3)+'px)';inner.style.transform='translate('+(tx*.5)+'px,'+(ty*.5)+'px)'}el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect();tx=e.clientX-r.left-r.width/2;ty=e.clientY-r.top-r.height/2;if(!raf)raf=requestAnimationFrame(apply)});el.addEventListener('mouseleave',function(){if(raf){cancelAnimationFrame(raf);raf=0}el.style.transform='';inner.style.transform=''})}document.querySelectorAll('.magnetic').forEach(bind)})();
-(function(){var form=document.getElementById('bookingForm');if(!form)return;form.addEventListener('submit',async function(e){e.preventDefault();var btn=form.querySelector('button[type=submit]');var inner=btn.querySelector('.magnetic-inner')||btn;var orig=inner.textContent;inner.textContent='Sending...';btn.disabled=true;try{await fetch('/',{method:'POST',body:new FormData(form)});alert('Got it! We\\'ll call within the hour.')}catch(err){inner.textContent=orig;btn.disabled=false;alert('Something went wrong. Call (314) 619-8742.')}})})();
+(function(){var form=document.getElementById('bookingForm');if(!form)return;form.addEventListener('submit',async function(e){e.preventDefault();var btn=form.querySelector('button[type=submit]');var inner=btn.querySelector('.magnetic-inner')||btn;var orig=inner.textContent;inner.textContent='Sending...';btn.disabled=true;try{await fetch('/',{method:'POST',body:new FormData(form)});alert('Got it! We\'ll call within the hour.')}catch(err){inner.textContent=orig;btn.disabled=false;alert('Something went wrong. Call (314) 619-8742.')}})})();
 </script>
 
 </body>
